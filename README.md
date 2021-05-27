@@ -13,7 +13,7 @@ The [NASA GeneLab](https://genelab.nasa.gov/) Data Processing team and [Educatio
 
 ---
 ## Training Programs
-Click on training program below for more information.
+Click on training program below for more information:
 - [GL4HS](GL4HS)  
 - [GL4U](GL4U)  
 
