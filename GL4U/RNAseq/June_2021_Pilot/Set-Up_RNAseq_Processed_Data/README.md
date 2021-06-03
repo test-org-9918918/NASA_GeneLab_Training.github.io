@@ -11,6 +11,10 @@ Prior to running the bootcamp, instructors must select a RNAseq dataset from the
 
 Exact processing scripts to generate the processed data for [GLDS-104](https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-104/) used in this bootcamp can be found in the [GLDS-104_Processing_Scripts](GLDS-104_Processing_Scripts) subdirectory. 
 
+<br>
+
+---
+
 ## RNAseq Tool Installation
 
 Prior to running the [GLDS-104 processing scripts](GLDS-104_Processing_Scripts), all RNAseq data processing tools must be installed. Instructions for how to install these tools are located in the [RNAseq_Tool_Installation](RNAseq_Tool_Installation) subdirectory.
