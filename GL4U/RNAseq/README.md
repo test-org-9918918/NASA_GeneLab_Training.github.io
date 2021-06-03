@@ -1,9 +1,8 @@
 # GL4U: RNA sequencing (RNAseq)
 
 ## About
-GL4U is designed by [NASA GeneLab](https://genelab.nasa.gov/) in collaboration with the GeneLab [Educational Working Group]() to provide space biology-relevant training in bioinformatics to the next generation of scientists through direct and indirect approaches. The GeneLab team plans to host two annual data processing bootcamps, one for college-level students (direct) and one for college educators (indirect – training of trainers), for each type of omics data hosted on the [GeneLab Data Repository](https://genelab-data.ndc.nasa.gov/genelab/projects). During the bootcamps, participants will learn about space biology, experimental design, data generation and associated technology usage, and perform hands-on analysis of space-relevant omics data using [GeneLab's standard processing pipelines](https://github.com/nasa/GeneLab_Data_Processing). This directory holds the college level training materials used to run the bootcamps for the omics assay types listed below including installation instructions for educators to set up and run these bootcamps at their home institutions.
+This directory holds the training materials used for each RNAseq bootcamp conducted. The [NASA GeneLab](https://genelab.nasa.gov/) Data Processing team updates the [RNAseq standard processing pipeline](https://github.com/nasa/GeneLab_Data_Processing/tree/master/RNAseq) annually in collaboration with the GeneLab [Analysis Working Group](https://genelab.nasa.gov/awg/charter) members, and subsequently updates the training materials used for the RNAseq bootcamp to ensure the bootcamps utilize the current pipeline. Click on a RNAseq bootcamp link below to access the training materials used during that bootcamp. 
 
 ---
-## Assay Types
-Click on an assay type below for training material:
-- [RNAseq](RNAseq)  
+## Past and Future RNAseq Bootcamps
+- [June_2021_Pilot](June_2021_Pilot)  
