@@ -1,5 +1,3 @@
 # Introduction to Statistics Used in RNA Sequencing Experiments and Data Processing
 
-Description
-
-Add complete lecture and lecture broken up into parts based on how they will be presented at the bootcamp - need to make pdfs with animations shown as multiple slides!
+The [full lecture](Statistics_Overview_FULL.pdf) was taught over two days, [day 4](Statistics_Overview_Day4.pdf), and [day 5](Statistics_Overview_Day5.pdf), during the week-long pilot GL4U: RNAseq bootcamp.
