@@ -1,5 +1,3 @@
-# Introduction to NASA, GeneLab, and the Command Line
+# Introduction to NASA, Space Biology, GeneLab, and the Command Line
 
-Description
-
-Add complete lecture and lecture broken up into parts based on how they will be presented at the bootcamp - need to make pdfs with animations shown as multiple slides!
+The [full lecture](NASA_SB_GL_CL_Intro_FULL.pdf) was taught during the first day of the pilot GL4U: RNAseq bootcamp.
