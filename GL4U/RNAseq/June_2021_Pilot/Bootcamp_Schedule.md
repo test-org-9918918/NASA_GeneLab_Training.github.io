@@ -6,6 +6,12 @@
 |:---------|:-------|
 |9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|
 |955am - 10am|BREAK|
+|10am - 1115am|NASA Guest Lectures (Winnie Kuang and Kristen Kallstrom) – UAM and ROMAX projects|
+|1115am - 1130am|BREAK|
+|1130am - noon|Finish Intro to NASA and GeneLab (lecture)|
+|noon - 1pm|LUNCH|
+|1pm - 145pm|Intro to Command Line (lecture)|
+|145pm - 2pm|Logging into the SJSU cluster|
 
 ---
 ## Day 2 Tuesday (6/8/2021):
