@@ -2,8 +2,40 @@
 
 ## Day 1 Monday (6/7/2021):
 
-|Bootcamp [Lectures](Lectures)|Corresponding hands-on training via JNs|
-|:---------------------------:|:-------------------------------------:|
-|[Introduction to NASA, Space Biology, GeneLab, and the Command Line](Lectures/NASA_GL_CL_Intro)|[How to set up and run basic Unix and R commands on the command line and through the JN environment](Intro_JNs)|
-|[RNAseq and Data Processing Overview](Lectures/RNAseq_Overview)|[Process raw RNAseq data from GLDS-104 to generate gene count data](RNAseq_JNs/RNAseq_fastq_to_counts_JN)|
-|[Overview of the Statistics Used for RNAseq Data Analysis](Lectures/Statistics_Intro)|[Analyze RNAseq gene count data to generate differential gene expression data and corresponding visualizations](RNAseq_JNs/RNAseq_DGE_JN)|
+|Time (PDT)|Activity|
+|:---------|:-------|
+|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|
+|955am - 10am|BREAK|
+
+---
+## Day 2 Tuesday (6/8/2021):
+
+|Time (PDT)|Activity|
+|:---------|:-------|
+|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|
+|955am - 10am|BREAK|
+
+---
+## Day 3 Wednesday (6/9/2021):
+
+|Time (PDT)|Activity|
+|:---------|:-------|
+|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|
+|955am - 10am|BREAK|
+
+---
+## Day 4 Thursday (6/10/2021):
+
+|Time (PDT)|Activity|
+|:---------|:-------|
+|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|
+|955am - 10am|BREAK|
+
+---
+## Day 5 Friday (6/11/2021):
+
+|Time (PDT)|Activity|
+|:---------|:-------|
+|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|
+|955am - 10am|BREAK|
+
