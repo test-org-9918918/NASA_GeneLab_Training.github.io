@@ -5,4 +5,4 @@ This directory holds the lectures presented during the pilot GL4U: RNAseq bootca
 ## Lectures
 - [NASA, Space Biology, GeneLab, and command line introduction](NASA_GL_CL_Intro)
 - [RNA sequencing and data processing overview](RNAseq_Overview)
-- [Introduction of the statistics used during differential gene expression analysis](Statistics_Intro)
+- [Introduction of the statistics used in RNAseq experiments and data processing](Statistics_Intro)
