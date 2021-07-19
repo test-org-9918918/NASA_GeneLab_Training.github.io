@@ -1,5 +1,3 @@
 # Overview of RNA Sequencing and Data Processing
 
-Description
-
-Add complete lecture and lecture broken up into parts based on how they will be presented at the bootcamp - need to make pdfs with animations shown as multiple slides!
+The [full lecture](RNAseq_Overview_FULL.pdf) was taught over three days, [day 2](RNAseq_Overview_Day2.pdf), [day 3](RNAseq_Overview_Day3.pdf), and [day 4](RNAseq_Overview_Day4.pdf), during the week-long pilot GL4U: RNAseq bootcamp.
