@@ -1,5 +1,5 @@
 ## Scripts used to generate the main set of count data:
-- [ADD RSEM Index script]()
+- [make_Mmus_RSEM_index.slurm](make_Mmus_RSEM_index.slurm)
 - [rsem_count.slurm](rsem_count.slurm)
 
 ## Input files called in the scripts used to generate the main set of count data:
