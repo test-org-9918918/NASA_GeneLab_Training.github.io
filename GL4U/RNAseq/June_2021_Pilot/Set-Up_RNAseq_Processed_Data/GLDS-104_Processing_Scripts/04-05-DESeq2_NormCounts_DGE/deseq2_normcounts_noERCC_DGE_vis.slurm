@@ -4,16 +4,13 @@
 #SBATCH --output=deseq2_normcounts_noERCC_DGE_vis.out
 #SBATCH --mem=40000
 #SBATCH --partition=nodes
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-#conda activate /home/asbutler/anaconda3/envs/RNAseq_R_tools
-export PATH="~/anaconda3/envs/RNAseq_R_tools/bin:$PATH"
+source activate /path/to/anaconda3/envs/RNAseq_R_tools
 
 echo ""
 echo "Path to R used: "
