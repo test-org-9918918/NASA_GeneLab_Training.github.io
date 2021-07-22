@@ -1,8 +1,8 @@
-## Scripts used to generate the main set of DGE data
+## Scripts used to generate the main set of DGE data:
 - [deseq2_normcounts_noERCC_DGE_vis.R](deseq2_normcounts_noERCC_DGE_vis.R)
 - [deseq2_normcounts_noERCC_DGE_vis.slurm](deseq2_normcounts_noERCC_DGE_vis.slurm)
 
-## Input files called in the scripts used to generate the main set of DGE data
+## Input files called in the scripts used to generate the main set of DGE data:
 - [organisms.csv](organisms.csv)
 - [GLDS-104_metadata.csv](GLDS-104_metadata.csv)
 
