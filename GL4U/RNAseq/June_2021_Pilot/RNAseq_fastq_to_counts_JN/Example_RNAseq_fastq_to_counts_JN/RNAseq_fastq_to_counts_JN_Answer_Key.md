@@ -71,30 +71,33 @@
 	> Because the number of forward and reverse reads have to be the same. So, the if the forward read of a fragment was 40bp after trimming (passing the 20bp cutoff) but the respective reverse read of that same fragment was 19bp after trimming (failing the 20bp cutoff) then both the forward and reverse read for the fragment must be removed.
 
 ---
-2b. Trimmed Data QC with FastQC - Compiled with MultiQC
+### Section 2b. Trimmed Data QC with FastQC - Compiled with MultiQC
 
-Take a look at the multiQC report of the trimmed fastQC data above and answer the following questions:
+**Take a look at the multiQC report of the trimmed fastQC data above and answer the following questions:**
 
 1.	How many reads are there in the GC_Rep1 sample after trimming? What about the FLT_Rep2 sample? Are they still the samples sequenced at the greatest and least read depth, respectively? (Hint: See M Seqs under "General Statistics")
-GC_Rep1: 85.6 Million Reads
-FLT_Rep2: 65.2 Million Reads (note this could still be fewer reads than the raw fastq files but the rounding only goes to the tenth of a million)
-Yes
+	> GC_Rep1: 85.6 Million Reads
+	>
+	> FLT_Rep2: 65.2 Million Reads (note this could still be fewer reads than the raw fastq files but the rounding only goes to the tenth of a million)
+	> 
+	> Yes
 
 2.	What is the sequencing depth range among samples? Is this an issue?
-65.2 - 85.6 Million reads per sample (difference of 20.4 Million reads among samples)
-Yes, this could be an issue (luckily the normalization steps later in the pipeline account for this). 
+	> 65.2 - 85.6 Million reads per sample (difference of 20.4 Million reads among samples).
+	>
+	> Yes, this could be an issue (luckily the normalization steps later in the pipeline account for this). 
 
 3.	What do you notice about the quality of the trimmed sequence data compared with the raw?
-The trimmed sequence data is better quality.
+	> The trimmed sequence data is better quality.
 
 4.	Do you still see adapters detected?
-No
+	> No
 
 5.	Do you think we're ready to align the trimmed reads to the reference genome now? Why or why not?
-Yes, because the trimmed reads are high quality and do not contain any detectable adapters.
+	> Yes, because the trimmed reads are high quality and do not contain any detectable adapters.
 
-
-4a. Align Trimmed Sequence Data with STAR
+---
+### Section 4a. Align Trimmed Sequence Data with STAR
 
 Look at the standard output from STAR above and answer the following questions:
 
