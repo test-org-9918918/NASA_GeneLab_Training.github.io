@@ -6,16 +6,5 @@ The JN in this directory contains instructions and commands for performing DGE a
 - [RNAseq DGE JN](RNAseq_DGE_JN_06-2021.ipynb)
 
 ## Input Files
-The following HTML files are called to view in the RNAseq fastq to counts JN:
-- [FLT_Rep1_R1_raw_fastqc.html](FLT_Rep1_R1_raw_fastqc.html)
-- [FLT_Rep1_R2_raw_fastqc.html](FLT_Rep1_R2_raw_fastqc.html)
-- [raw_multiqc.html](raw_multiqc.html)
-- [trimmed_multiqc.html](trimmed_multiqc.html)
-- [aligned_multiqc.html](aligned_multiqc.html)
-
-The following SLURM scripts are submitted to the cluster's SLURM job scheduler in the RNAseq fastq to counts JN:
-- [raw_fastqc_FLT_Rep1.slurm](raw_fastqc_FLT_Rep1.slurm)
-- [trim-galore_FLT_Rep1.slurm](trim-galore_FLT_Rep1.slurm)
-- [trimmed_fastqc_FLT_Rep1.slurm](trimmed_fastqc_FLT_Rep1.slurm)
-- [STAR_align_FLT_Rep1.slurm](STAR_align_FLT_Rep1.slurm)
-- [rsem_count_FLT_Rep1.slurm](rsem_count_FLT_Rep1.slurm)
+The following SLURM script is submitted to the cluster's SLURM job scheduler in the RNAseq DGE JN:
+- [deseq2_normcounts_noERCC_DGE_vis_SJSU.slurm](deseq2_normcounts_noERCC_DGE_vis_SJSU.slurm)
