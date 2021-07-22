@@ -4,17 +4,17 @@
 #SBATCH --output=make_Mmus_RL-100_STAR_index.out
 #SBATCH --mem=60000
 #SBATCH --partition=nodes
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 echo ""
 
-STARdir=/gpfs/scratch/asbutler/SJSU_course_material/STAR_Indices/ensembl_101/Mus_musculus_RL-100
-genome_gtf=/gpfs/scratch/asbutler/SJSU_course_material/genomes_gtf/ensembl_101/Mus_musculus
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
+
+STARdir=/path/to/STAR_Indices/ensembl_101/Mus_musculus_RL-100
+genome_gtf=/path/to/genomes_gtf/ensembl_101/Mus_musculus
 
 echo "STAR version: "
 STAR --version
