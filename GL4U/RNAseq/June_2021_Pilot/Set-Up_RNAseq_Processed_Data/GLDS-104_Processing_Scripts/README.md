@@ -11,10 +11,10 @@ These samples were processed in batch using the SLURM job scheduler on the San J
 ## Software used  
 |Program|Version|Relevant Links|
 |:------|:------:|:-------------|
-|FastQC|0.11.8|[https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)|
-|MultiQC|1.7|[https://multiqc.info/](https://multiqc.info/)|
-|Cutadapt|2.3|[https://cutadapt.readthedocs.io/en/stable/](https://cutadapt.readthedocs.io/en/stable/)|
-|TrimGalore!|0.6.2|[https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)|
+|FastQC|0.11.9|[https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)|
+|MultiQC|1.9|[https://multiqc.info/](https://multiqc.info/)|
+|Cutadapt|3.2|[https://cutadapt.readthedocs.io/en/stable/](https://cutadapt.readthedocs.io/en/stable/)|
+|TrimGalore!|0.6.6|[https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)|
 |STAR|2.7.1a|[https://github.com/alexdobin/STAR](https://github.com/alexdobin/STAR)|
 |RSEM|1.3.1|[https://github.com/deweylab/RSEM](https://github.com/deweylab/RSEM)|
 |Bioconductor|3.9|[https://bioconductor.org](https://bioconductor.org)|
