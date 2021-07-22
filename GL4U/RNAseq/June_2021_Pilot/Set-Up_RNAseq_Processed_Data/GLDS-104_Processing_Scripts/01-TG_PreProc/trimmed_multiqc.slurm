@@ -4,16 +4,16 @@
 #SBATCH --output=GLDS-104_trimmed_multiqc_report.out
 #SBATCH --mem=16000
 #SBATCH --partition=nodes
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-in_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/FastQC_Reports
-out_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/FastQC_Reports/trimmed_multiqc_report
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
+
+in_dir=/path/to/GLDS-104/01-TG_Preproc/FastQC_Reports
+out_dir=/path/to/GLDS-104/01-TG_Preproc/FastQC_Reports/trimmed_multiqc_report
 
 echo "MultiQC version: "
 multiqc --version
