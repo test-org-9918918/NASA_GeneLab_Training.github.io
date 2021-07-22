@@ -10,9 +10,9 @@ start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-source activate /home/asbutler/anaconda3/envs/rnaseq_v1.0
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
 
-in_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/Fastq
+in_dir=/path/to/GLDS-104/01-TG_Preproc/Fastq
 out_dir=./GLDS-104/01-TG_Preproc/FastQC_Reports
 
 echo ""
