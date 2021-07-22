@@ -1,9 +1,7 @@
 # GeneLab processing commands for GLDS-104
-This dataset was processed with [GL-DPPD-7104-A](../../Previous_GL-DPPD-7101_Revisions/GL-DPPD-7101-A.md).
+This dataset was processed with [GL-DPPD-7104-A](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/Previous_GL-DPPD-7101_Revisions/GL-DPPD-7101-A.md).
 
-The raw and processed data are available from: [https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-48/](https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-48/)
-
-These samples were processed in batch using the SLURM job scheduler. The following sub-directories contain the scripts used to generate each level of processed data.
+These samples were processed in batch using the SLURM job scheduler on the San Jose State University (SJSU) cluster. The following sub-directories contain the scripts used to generate each level of processed data.
   - [00-RawData](00-RawData): Slurm scripts used to generate raw fastQC and multiQC reports
   - [01-TG_PreProc](01-TG_Preproc): Slurm scripts used to generate trimmed reads, trimmed fastQC and multiQC reports
   - [02-STAR_Alignment](02-STAR_Alignment): Slurm scripts used to generate STAR reference and STAR alignment files
