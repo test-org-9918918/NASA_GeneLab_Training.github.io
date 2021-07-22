@@ -5,17 +5,16 @@
 #SBATCH --mem=12000
 #SBATCH --partition=nodes
 #SBATCH --array=1-12
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
-out_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/Fastq
-in_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/00-RawData/Fastq
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
+
+out_dir=/path/to/GLDS-104/01-TG_Preproc/Fastq
+in_dir=/path/to/GLDS-104/00-RawData/Fastq
 
 echo ""
 echo "TrimGalore! version: "
@@ -50,4 +49,3 @@ runtime_m=$(echo "scale=2; $runtime_s / $sec_per_min;" | bc)
 echo "total run time(m): $runtime_m"
 runtime_h=$(echo "scale=2; $runtime_s / $sec_per_hr;" | bc)
 echo "total run time(h): $runtime_h"
-
