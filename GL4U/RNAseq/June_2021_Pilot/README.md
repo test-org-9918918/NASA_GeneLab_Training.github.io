@@ -10,7 +10,7 @@ To run this bootcamp, instructors should work with their system administrator to
 
 ---
 ## Training Materials
-Throughout the bootcamp, instruction transitioned between lectures and hands-on training. In the links below, we provide 3 complete slide decks for each major topic covered, and those same slide decks split-up into sections based on when the material was taught during the week-long bootcamp. We also provide 4 JNs that contain the hands-on training corresponing to the lecture material as well as completed versions of the JNs. For information about when each section of the JNs were taught during the bootcamp see the [schedule](Bootcamp_Schedule.md). 
+Throughout the bootcamp, instruction transitioned between lectures and hands-on training. In the links below, we provide 3 complete slide decks for each major topic covered, and those same slide decks split-up into sections based on when the material was taught during the week-long bootcamp. We also provide 4 JNs that contain the hands-on training corresponing to the lecture material, as well as completed versions of each JN. For information about when each section of the JNs were taught during the bootcamp see the [schedule](Bootcamp_Schedule.md). 
 
 |Bootcamp [Lectures](Lectures)|Corresponding hands-on training via JNs|
 |:---------------------------:|:-------------------------------------:|
