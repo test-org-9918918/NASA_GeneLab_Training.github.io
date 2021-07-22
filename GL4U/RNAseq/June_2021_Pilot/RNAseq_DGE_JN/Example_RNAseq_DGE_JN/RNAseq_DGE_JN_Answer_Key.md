@@ -42,11 +42,11 @@
 **Recall:**
 
 •	**What issues do you think the differences in read depth could cause? Keep in mind we are about to perform a differential gene expression analysis where we are directly comparing the expression of each gene between samples.**
-
+	>
 	> Samples with deeper read depth (i.e. more total reads) will appear to have higher expression of many genes than samples with shallower read depth (i.e less total reads).
 
 •	**How could this affect interpretation of downstream results?**
-
+	>
 	> We could be tricked into thinking that certain genes are significantly differentially expressed biologically, when it is really a technical artifact.
 
 ---
@@ -88,48 +88,53 @@
 
 **Answer the following questions:**
 1.	Is the Wald Test the only type of hypothesis testing method we could have used here? (Hint: see the "Likelihood ratio test" section here: http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
-No, we could have used the Likelihood Ration Test (LRT)
+	> No, we could have used the Likelihood Ration Test (LRT)
 
 2.	Why did we choose the Wald Test?
-Because we only had 2 comparisons
+	> Because we only had 2 comparisons
 
-Look at the PCA plots before and after normalization, and answer the following questions:
+**Look at the PCA plots before and after normalization, and answer the following questions:**
 1.	Is the percent of variance explained by PC2 more or less after normalization? Does that tell you anything about what was contributing to the differences in PC2?
-Less 
-Some of PC2 was driven by technical differences between samples
+	> Less 
+	>
+	> Some of PC2 was driven by technical differences between samples
 
 2.	How has the within-group variation changed? Why do you think that is?
-The FLT samples are closer together, and the GC samples are closer together. 
-Some of the differences among samples within the same group were due to technical artifacts.
+	> The FLT samples are closer together, and the GC samples are closer together. 
+	>
+	> Some of the differences among samples within the same group were due to technical artifacts.
 
 3.	How has the percent of variance explained by PC1 changed? What does this mean?
-Increased 
-This means PC1 is driven by biological signal, which became stronger after normalizing for technical differences
+	> Increased 
+	>
+	> This means PC1 is driven by biological signal, which became stronger after normalizing for technical differences
 
-Challenge: Use the next few code blocks to 1) list the number of PCs after normalization and 2) recreate the PCA plot but adjust these parameters: label.size, size, alpha (must be between 0 and 1). How does your plot change?
-1)	12 PCs
-2)	The labels on the graph becomes more transparent
+**Challenge: Use the next few code blocks to 1) list the number of PCs after normalization and 2) recreate the PCA plot but adjust these parameters: label.size, size, alpha (must be between 0 and 1). How does your plot change?**
+> 1)	12 PCs
+> 
+> 2)	The labels on the graph becomes more transparent
 
+---
+### Section 3a. Perform Data Calculations and Create DGE Output Table
 
-3a. Perform Data Calculations and Create DGE Output Table
-
-Looking at the DGE output table now, answer the following questions:
+**Looking at the DGE output table now, answer the following questions:**
 1.	How many columns have been added?
-2
+	> 2
 
 2.	What is the average expression of gene, ENSMUSG00000000031 across all samples?
-94204.228135
+	> 94204.228135
 
-Use the code block below to look at the DGE output table now and answer the following questions: 
+**Use the code block below to look at the DGE output table now and answer the following questions:** 
 1.	How many columns have been added?
-4
+	> 4
 
 2.	What is the average expression of gene, ENSMUSG00000000031 in the FLT group? In the GC group?
-FLT: 76499.93
-GC: 111908.53
+	> FLT: 76499.93
+	>
+	> GC: 111908.53
 
-
-3b. Add Gene Annotations
+---
+### Section 3b. Add Gene Annotations
 
 Look at the organism_table above and answer the following questions:
 1.	What are the first 6 organisms listed in this table?
