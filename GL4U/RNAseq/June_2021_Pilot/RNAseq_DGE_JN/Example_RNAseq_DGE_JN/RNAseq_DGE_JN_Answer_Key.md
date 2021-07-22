@@ -39,36 +39,37 @@
 ---
 ## Section 2. DESeq2 Data Normalization
 
-Recall:
-•	What issues do you think the differences in read depth could cause? Keep in mind we are about to perform a differential gene expression analysis where we are directly comparing the expression of each gene between samples.
-Samples with deeper read depth (i.e. more total reads) will appear to have higher expression of many genes than samples with shallower read depth (i.e less total reads).
+**Recall:**
+•	**What issues do you think the differences in read depth could cause? Keep in mind we are about to perform a differential gene expression analysis where we are directly comparing the expression of each gene between samples.**
+	> Samples with deeper read depth (i.e. more total reads) will appear to have higher expression of many genes than samples with shallower read depth (i.e less total reads).
 
-•	How could this affect interpretation of downstream results?
-We could be tricked into thinking that certain genes are significantly differentially expressed biologically, when it is really a technical artifact.
+•	**How could this affect interpretation of downstream results?**
+	> We could be tricked into thinking that certain genes are significantly differentially expressed biologically, when it is really a technical artifact.
 
+---
+### Section 2a. PCA of Raw, Unnormalized Count Data
 
-2a. PCA of Raw, Unnormalized Count Data
-
-Based on the summary(PCA_raw) output, answer the following questions:
+**Based on the summary(PCA_raw) output, answer the following questions:**
 1.	How many PCs were detected?
-12
+	> 12
 
 2.	What percent of the variance is explained by PC1? PC2? (Hint: See Proportion of Variance)
-PC1: 18.2%
-PC2: 13.6%
+	> PC1: 18.2%
+	>
+	> PC2: 13.6%
 
 3.	How are the PCs ranked?
-By Standard deviation and proportion of variance, decreasing and Cumulative Proportion increasing
+	> By Standard deviation and proportion of variance, decreasing and Cumulative Proportion increasing
 
-Take a look at the PCA plots we generated using the raw, unnormalized count data and answer the following questions:
+**Take a look at the PCA plots we generated using the raw, unnormalized count data and answer the following questions:**
 1.	Is there a pattern in how the samples are separating?
-They are separating by FLT and GC condition
+	> They are separating by FLT and GC condition
 
 2.	Would you expect the data points to separate like this based on their biological conditions? Why or why not?
-Yes, because they are separating by biological condition
+	> Yes, because they are separating by biological condition
 
-
-2c. DESeq2 Step 2: Estimate Gene Dispersions
+---
+### Section 2c. DESeq2 Step 2: Estimate Gene Dispersions
 
 Use the plot above to answer the following questions:
 1.	What is the relationship between gene dispersion and mean expression of a gene? What does this tell you about RNA sequencing data?
