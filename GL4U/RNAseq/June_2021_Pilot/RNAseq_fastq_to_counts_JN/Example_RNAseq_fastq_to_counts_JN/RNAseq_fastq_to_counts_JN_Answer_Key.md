@@ -99,55 +99,64 @@
 ---
 ### Section 4a. Align Trimmed Sequence Data with STAR
 
-Look at the standard output from STAR above and answer the following questions:
+**Look at the standard output from STAR above and answer the following questions:**
 
 1.	Did the STAR alignment complete successfully? How do you know?
-Yes, the standard output says so: “finished successfully”
+	> Yes, the standard output says so: “finished successfully”
 
 2.	How long did it take for the STAR alignment to complete?
-16.88 hours (note: this is with only running on 1 CPU, but changing the #SBATCH --ntasks option to 4 allows the job to run across 4 CPUs, which speeds this step up to ~4-5 hours per sample)  
+	> 16.88 hours (note: this is with only running on 1 CPU, but changing the #SBATCH --ntasks option to 4 allows the job to run across 4 CPUs, which speeds this step up to ~4-5 hours per sample)  
 
-Now that you know what the fields mean, look at the BAM file above and answer the following questions:
+**Now that you know what the fields mean, look at the BAM file above and answer the following questions:**
 
 1.	How many transcripts are represented in the BAM file? How do you know?
-5; By looking at the number of unique reference sequence names (RNAME):
-ENSMUST00000190277
-ENSMUST00000082409
-ENSMUST00000107038
-ENSMUST00000175751
-ENSMUST00000045243
+	> 5; By looking at the number of unique reference sequence names (RNAME):
+	>
+	> ENSMUST00000190277
+	>
+	> ENSMUST00000082409
+	>
+	> ENSMUST00000107038
+	>
+	> ENSMUST00000175751
+	>
+	> ENSMUST00000045243
 
 2.	How many read pairs are shown? How do you know?
-2 read pairs
-Note the same set of sequences (mate pairs) for the first two transcripts and the same set of sequences (mate pairs) for the last three transcripts.
-
+	> 2 read pairs
+	>
+	> Note the same set of sequences (mate pairs) for the first two transcripts and the same set of sequences (mate pairs) for the last three transcripts.
 
 3.	How many reads align in the same orientation relative to the reference? What about in the opposite orientation? How to you know?
-5 reads align in the same orientation relative to the reference (positive TLEN value).
-5 reads align in the opposite orientation relative to the reference (negative TLEN value).
+	> 5 reads align in the same orientation relative to the reference (positive TLEN value).
+	>
+	> 5 reads align in the opposite orientation relative to the reference (negative TLEN value).
 
 4.	What are the min and max template length shown? How do you know?
-Min: 167 bases
-Max: 203 bases
-By looking at the TLEN column.
+	> Min: 167 bases
+	>
+	> Max: 203 bases
+	>
+	> By looking at the TLEN column.
 
-Use the alignment log file above to answer the following questions:
+**Use the alignment log file above to answer the following questions:**
 
 1.	How many reads mapped to a unique location on the reference genome?
-52,768,612 (77.23%)
+	> 52,768,612 (77.23%)
 
 2.	How many reads mapped to multiple locations on the reference genome?
-8,043,149 (11.77%)
+	> 8,043,149 (11.77%)
 
 3.	Were any splice regions identified? If so, how many in total?
-Yes, 38,545,460
+	> Yes, 38,545,460
 
 4.	How many of the spliced regions were annotated? How many were non-canonical?
-Annotated: 38,545,209
-Non-canonical: 14,146
+	> Annotated: 38,545,209
+	>
+	> Non-canonical: 14,146
 
-
-4b. Compile Alignment Log Files with MultiQC
+---
+### Section 4b. Compile Alignment Log Files with MultiQC
 
 Take a look at the multiQC report of the alignment data above and answer the following questions:
 
