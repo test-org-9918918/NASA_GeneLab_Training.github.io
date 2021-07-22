@@ -1,7 +1,7 @@
 # RNAseq_fastq_to_counts_JN_06-2021.ipynb Challange Question Answer Key:
 
 ---
-## Section 1a&b. Raw Data QC with FastQC - Compiled with MultiQC
+### Section 1a&b. Raw Data QC with FastQC - Compiled with MultiQC
 
 **Take a look at the multiQC report of the raw fastQC data above and answer the following questions:**
 1.	Which sample was sequenced at the greatest read depth? the least read depth? (Hint: See M Seqs under "General Statistics")
@@ -10,16 +10,17 @@
     > Least: FLT_Rep2 (65.2 Million Reads)
 
 2.	What do you notice about the quality of the raw sequence data? Are there any differences between the forward and reverse reads?
-The quality is overall good (>Q28).
-The quality is a bit lower at the very beginning of the read and again at the end of the read.
-The reverse reads have slightly lower quality than the forward reads.
+	> The quality is overall good (>Q28). The quality is a bit lower at the very beginning of the read and again at the end of the read.
+	> 
+	> The reverse reads have slightly lower quality than the forward reads.
 
 3.	Were adapters detected?
-Yes, Illumina Universal Adapters are detected towards the end of some reads for every sample, although they make up less than 3.5% of the total reads for each sample.
+	> Yes, Illumina Universal Adapters are detected towards the end of some reads for every sample, although they make up less than 3.5% of the total reads for each sample.
 
 4.	Should we trim and/or filter the data before aligning to the reference genome? Why or why not?
-Yes, to remove the adapter sequences.
+	> Yes, to remove the adapter sequences.
 
+---
 
 2a. Trim and Filter Raw Sequence Data with Trim Galore!
 
