@@ -5,20 +5,20 @@
 #SBATCH --mem=60000
 #SBATCH --partition=nodes
 #SBATCH --array=1-12
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
-out_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/02-STAR_Alignment"
-in_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/Fastq"
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
 
-REF="/gpfs/scratch/asbutler/BioCS123B/STAR_Indices/ensembl_101/Mus_musculus_RL-100"
-GTF="/gpfs/scratch/asbutler/BioCS123B/genomes_gtf/ensembl_101/Mus_musculus/Mus_musculus.GRCm38.101.gtf"
+out_dir="/path/to/GLDS-104/02-STAR_Alignment"
+in_dir="/path/to/GLDS-104/01-TG_Preproc/Fastq"
+
+REF="/path/to/STAR_Indices/ensembl_101/Mus_musculus_RL-100"
+GTF="/path/to/genomes_gtf/ensembl_101/Mus_musculus/Mus_musculus.GRCm38.101.gtf"
 
 sample=$(cat samples.txt | sed -n ${SLURM_ARRAY_TASK_ID}p)
 
