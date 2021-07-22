@@ -12,13 +12,13 @@ start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-source activate /home/asbutler/anaconda3/envs/rnaseq_v1.0
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
 
 out_dir="./GLDS-104/02-STAR_Alignment"
-in_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/Fastq"
+in_dir="/path/to/GLDS-104/01-TG_Preproc/Fastq"
 
-REF="/gpfs/scratch/asbutler/BioCS123B/STAR_Indices/ensembl_101/Mus_musculus_RL-100"
-GTF="/gpfs/scratch/asbutler/BioCS123B/genomes_gtf/ensembl_101/Mus_musculus/Mus_musculus.GRCm38.101.gtf"
+REF="/path/to/STAR_Indices/ensembl_101/Mus_musculus_RL-100"
+GTF="/path/to/genomes_gtf/ensembl_101/Mus_musculus/Mus_musculus.GRCm38.101.gtf"
 
 echo ""
 mkdir $out_dir/FLT_Rep1
