@@ -189,37 +189,41 @@
 ---
 ### Section 4b. Heatmap
 
-Use the heatmap to answer the following questions:
+**Use the heatmap to answer the following questions:**
 1.	What overall trends do you notice in the expression of the DEGs in samples within the same group? What about samples in different groups?
-The expression of the DEGs is more similar among samples within the same group than samples in different groups
+	> The expression of the DEGs is more similar among samples within the same group than samples in different groups
 
-What if we don't log transform the data, either? Spoiler alert: this crashes the kernel in the Jupyter Hub! Why do you think this is?
-If we don’t log transform the data, the expression values span from 1 to over 30,000
-If we all run Heatmap() at once, the function tries to fit all those values into the heatmap which is
+**What if we don't log transform the data, either? Spoiler alert: this crashes the kernel in the Jupyter Hub! Why do you think this is?**
+> If we don’t log transform the data, the expression values span from 1 to over 30,000
+> 
+> If we all run Heatmap() at once, the function tries to fit all those values into the heatmap which is
 very computationally intensive and causes the server to crash.
 
-We've generated this plot locally and provided it here. Is this a useful plot?
-No, it is very difficult to see differences between groups because all of the color differences are
+**We've generated this plot locally and provided it here. Is this a useful plot?**
+> No, it is very difficult to see differences between groups because all of the color differences are
 concentrated at the highest values.
 
+---
+### Section 4c. Volcano Plot
 
-4c. Volcano Plot
-
-Use the volcano plot (and our collective conscious - aka the internet) to answer the following questions:
+**Use the volcano plot (and our collective conscious - aka the internet) to answer the following questions:**
 1.	Which gene has the smallest adjusted p-value that still passes our Log2FC cutoff?
-Gm5532
+	> Gm5532
 
 2.	Is Gm5532 more highly expressed in FLT or GC samples? How do you know?
-GC, because it has a negative LFC and we plotted the FLT vs GC comparison
+	> GC, because it has a negative LFC and we plotted the FLT vs GC comparison
 
 3.	Which gene is most highly expressed in the FLT group? Does this gene also pass the adjusted p-value cutoff?
-Krt17 
-Yes, it does pass the p-value cutoff
+	> Krt17 
+	>
+	> Yes, it does pass the p-value cutoff
 
 4.	Since Gm5532 is the most highly differentially expressed gene, see if you can find its biological function (feel free to use your friend Google to help you out). Are you able to find an annotated function?
-Gm5532 is an uncharacterized protein. There are references indicating its expression in the musculoskeletal system and in the brain; however, the function of the protein that is generated from this gene is currently unknown.
+	> Gm5532 is an uncharacterized protein. There are references indicating its expression in the musculoskeletal system and in the brain; however, the function of the protein that is generated from this gene is currently unknown.
 
 5.	What is the function of the gene Krt17? Is it more highly expressed in the FLT or GC condition? Based on its function, why do you think this is?
-Krt17 encodes for a keratin protein. 
-Krt17 is more highly expressed in the FLT condition.
-Since keratin is involved in forming intermediate filaments, which respond to physical stress, it makes sense that Krt17 is more highly expressed in the FLT group. Additionally, at least one scientific publication (https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/1471-2164-15-303.pdf) shows that Krt17 is up-regulated in hypoxic conditions (i.e. low oxygen) and we know that the International Space Station has less oxygen than we have here on Earth, creating a slightly hypoxic condition for the FLT samples. 
+	> Krt17 encodes for a keratin protein. 
+	>
+	> Krt17 is more highly expressed in the FLT condition.
+	>
+	> Since keratin is involved in forming intermediate filaments, which respond to physical stress, it makes sense that Krt17 is more highly expressed in the FLT group. Additionally, at least one scientific publication (https://bmcgenomics.biomedcentral.com/track/pdf/10.1186/1471-2164-15-303.pdf) shows that Krt17 is up-regulated in hypoxic conditions (i.e. low oxygen) and we know that the International Space Station has less oxygen than we have here on Earth, creating a slightly hypoxic condition for the FLT samples. 
