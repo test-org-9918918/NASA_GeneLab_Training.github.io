@@ -12,6 +12,7 @@ echo "start time: $start"
 echo $HOSTNAME
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
 
 in_dir=/path/to/GLDS-104/00-RawData/Fastq
 out_dir=/path/to/GLDS-104/00-RawData/FastQC_Reports
