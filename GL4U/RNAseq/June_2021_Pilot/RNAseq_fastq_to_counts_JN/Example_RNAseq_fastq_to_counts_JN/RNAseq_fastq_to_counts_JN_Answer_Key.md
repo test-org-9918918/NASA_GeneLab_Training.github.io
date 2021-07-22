@@ -177,7 +177,9 @@
 > It means that the read will be ignored in the counting process because the read itself or its mate had a length less that the seed length of 25 (set by default).
 > 
 > From the RSEM user guide:
+> 
 > --seed-length <int>
+	>
 	> Seed length used by the read aligner. Providing the correct value is important for RSEM. If RSEM runs Bowtie, it uses this value for Bowtie's seed length parameter. Any read with its or at least one of its mates' (for paired-end reads) length less than this value will be ignored. If the references are not added poly(A) tails, the minimum allowed value is 5, otherwise, the minimum allowed value is 25. Note that this script will only check if the value >= 5 and give a warning message if the value < 25 but >= 5. (Default: 25)
 > 
 > No, we don’t need to be concerned.
@@ -188,6 +190,7 @@
 	> ENSMUSG00000000001
 
 2.	For that first gene,
+	
 	a. What is the gene length? 
 	> 3262.00 bp
 
@@ -212,13 +215,15 @@
 ---
 ## Section 7. Generate Raw Counts Table
 
-Look at the beginning of the Unnormalized Counts table above and answer the following questions:
+**Look at the beginning of the Unnormalized Counts table above and answer the following questions:**
 1.	How many genes are shown?
-5
+	> 5
 
 2.	Which of the genes shown are not expressed in any sample?
-ENSMUSG00000000003
+	> ENSMUSG00000000003
 
 3.	Which sample has the most reads aligning to gene, ENSMUSG00000000028? Which sample has the least?
-Most: FLT_Rep5 (193.0)
-Least: FLT_Rep3 (87.0)
+	> Most: FLT_Rep5 (193.0)
+	>
+	> Least: FLT_Rep3 (87.0)
+	
