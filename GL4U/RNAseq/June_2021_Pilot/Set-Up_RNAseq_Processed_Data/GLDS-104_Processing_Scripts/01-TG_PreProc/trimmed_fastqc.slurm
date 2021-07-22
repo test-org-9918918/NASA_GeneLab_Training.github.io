@@ -5,18 +5,17 @@
 #SBATCH --mem=8000
 #SBATCH --partition=nodes
 #SBATCH --array=1-12
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 echo "My SLURM_ARRAY_TASK_ID: " $SLURM_ARRAY_TASK_ID
 
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
 
-in_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/Fastq
-out_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/01-TG_Preproc/FastQC_Reports
+in_dir=/path/to/GLDS-104/01-TG_Preproc/Fastq
+out_dir=/path/to/GLDS-104/01-TG_Preproc/FastQC_Reports
 
 echo ""
 echo "FastQC version: "
