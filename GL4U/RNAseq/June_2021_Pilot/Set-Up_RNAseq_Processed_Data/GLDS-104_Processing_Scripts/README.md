@@ -18,7 +18,7 @@ These samples were processed in batch using the SLURM job scheduler on the San J
 |STAR|2.7.7a|[https://github.com/alexdobin/STAR](https://github.com/alexdobin/STAR)|
 |RSEM|1.3.1|[https://github.com/deweylab/RSEM](https://github.com/deweylab/RSEM)|
 |R|4.0.3|[https://www.r-project.org/](https://www.r-project.org/)|
-|Bioconductor|3.9|[https://bioconductor.org](https://bioconductor.org)|
+|Bioconductor|3.12.0|[https://bioconductor.org](https://bioconductor.org)|
 |DESeq2|1.30.0|[https://bioconductor.org/packages/release/bioc/html/DESeq2.html](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)|
 |tximport|1.18.0|[https://bioconductor.org/packages/release/bioc/html/tximport.html](https://bioconductor.org/packages/release/bioc/html/tximport.html)|
 |tidyverse|1.3.0|[https://www.tidyverse.org](https://www.tidyverse.org)|
