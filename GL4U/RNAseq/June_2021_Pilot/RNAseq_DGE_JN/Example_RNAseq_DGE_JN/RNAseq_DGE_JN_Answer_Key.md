@@ -40,10 +40,13 @@
 ## Section 2. DESeq2 Data Normalization
 
 **Recall:**
+
 •	**What issues do you think the differences in read depth could cause? Keep in mind we are about to perform a differential gene expression analysis where we are directly comparing the expression of each gene between samples.**
+
 	> Samples with deeper read depth (i.e. more total reads) will appear to have higher expression of many genes than samples with shallower read depth (i.e less total reads).
 
 •	**How could this affect interpretation of downstream results?**
+
 	> We could be tricked into thinking that certain genes are significantly differentially expressed biologically, when it is really a technical artifact.
 
 ---
@@ -71,18 +74,19 @@
 ---
 ### Section 2c. DESeq2 Step 2: Estimate Gene Dispersions
 
-Use the plot above to answer the following questions:
+**Use the plot above to answer the following questions:**
 1.	What is the relationship between gene dispersion and mean expression of a gene? What does this tell you about RNA sequencing data?
-As gene expression (x-axis) increases, dispersion (y-axis) decreases 
-RNA sequencing data is noisy at low expression values
+	> As gene expression (x-axis) increases, dispersion (y-axis) decreases 
+	>
+	> RNA sequencing data is noisy at low expression values
 
 2.	How do the gene expression data change before (black dots) and after (blue dots) fitting based on gene dispersion?
-The distribution tightens around the median
+	> The distribution tightens around the median
 
+---
+### Section 2d. DESeq2 Step 3: Hypothesis Testing with Wald Test
 
-2d. DESeq2 Step 3: Hypothesis Testing with Wald Test
-
-Answer the following questions:
+**Answer the following questions:**
 1.	Is the Wald Test the only type of hypothesis testing method we could have used here? (Hint: see the "Likelihood ratio test" section here: http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
 No, we could have used the Likelihood Ration Test (LRT)
 
