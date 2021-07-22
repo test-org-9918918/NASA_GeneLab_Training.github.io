@@ -3,20 +3,22 @@
 ---
 ### Section 1b. Import the Data
 
-Use the contrasts table above to answer the following questions:
+**Use the contrasts table above to answer the following questions:**
 1.	How many comparisons are shown? What are they?
-2 
-FLT vs GC and GC vs FLT
+	> 2
+	>
+	> FLT vs GC and GC vs FLT
 
 2.	For the comparisons indicated above, if geneA is up-regulated in the FLT samples, will the log fold change of geneA's expression be positive or negative in the FLT v GC comparison? What about in the GC v FLT comparison?
-Positive in the FLT v GC comparison
-Negative in the GC v FLT comparison
+	> Positive in the FLT v GC comparison
+	>
+	> Negative in the GC v FLT comparison
 
-Recall: Why does the RSEM raw counts table contain values other than integers in the first place?
-Because it is the maximum likelihood estimation of gene counts, not necessarily whole gene counts
+**Recall: Why does the RSEM raw counts table contain values other than integers in the first place?**
+> Because it is the maximum likelihood estimation of gene counts, not necessarily whole gene counts
 
-
-1c. Make DESeqDataSet Object
+---
+### Section 1c. Make DESeqDataSet Object
 
 Based on the summary(dds) output, answer the following question:
 1.	How many genes are stored in the DESeqDataSet object?
