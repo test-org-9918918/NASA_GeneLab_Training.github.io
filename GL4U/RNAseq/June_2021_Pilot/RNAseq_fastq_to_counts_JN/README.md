@@ -6,9 +6,16 @@ The JN in this directory contains instructions and commands for processing raw R
 - [RNAseq fastq to counts JN](RNAseq_fastq_to_counts_JN_06-2021.ipynb)
 
 ## Input Files
-The following files are called in the RNAseq fastq to counts JN:
+The following HTML files are called to view in the RNAseq fastq to counts JN:
 - [FLT_Rep1_R1_raw_fastqc.html](FLT_Rep1_R1_raw_fastqc.html)
 - [FLT_Rep1_R2_raw_fastqc.html](FLT_Rep1_R2_raw_fastqc.html)
 - [raw_multiqc.html](raw_multiqc.html)
 - [trimmed_multiqc.html](trimmed_multiqc.html)
 - [aligned_multiqc.html](aligned_multiqc.html)
+
+The following SLURM scripts are submitted to the cluster's SLURM job scheduler in the RNAseq fastq to counts JN:
+- [raw_fastqc_FLT_Rep1.slurm](raw_fastqc_FLT_Rep1.slurm)
+- [trim-galore_FLT_Rep1.slurm](trim-galore_FLT_Rep1.slurm)
+- [trimmed_fastqc_FLT_Rep1.slurm](trimmed_fastqc_FLT_Rep1.slurm)
+- [STAR_align_FLT_Rep1.slurm](STAR_align_FLT_Rep1.slurm)
+- [rsem_count_FLT_Rep1.slurm](rsem_count_FLT_Rep1.slurm)
