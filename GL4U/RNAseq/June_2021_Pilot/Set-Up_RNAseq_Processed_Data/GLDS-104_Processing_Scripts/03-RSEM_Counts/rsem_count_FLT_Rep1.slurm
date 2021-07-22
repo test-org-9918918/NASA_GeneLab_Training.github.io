@@ -10,10 +10,10 @@ start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-source activate /home/asbutler/anaconda3/envs/rnaseq_v1.0
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
 
-input_bam="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/02-STAR_Alignment"
-rsem_ref="/gpfs/scratch/asbutler/BioCS123B/RSEM_Indices/ensembl_101/Mus_musculus/Mmus"
+input_bam="/path/to/GLDS-104/02-STAR_Alignment"
+rsem_ref="/path/to/RSEM_Indices/ensembl_101/Mus_musculus/Mmus"
 counts_output="./GLDS-104/03-RSEM_Counts"
 
 echo ""
