@@ -4,8 +4,8 @@ library(tidyverse)
 
 organism <- "MOUSE"
 
-work_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/Metadata"
-counts_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/03-RSEM_Counts"
+work_dir="/path/to/GLDS-104/Metadata"
+counts_dir="/path/to/GLDS-104/03-RSEM_Counts"
 norm_output="~/GLDS-104/04-DESeq2_NormCounts"
 DGE_output="~/GLDS-104/05-DESeq2_DGE"
 
