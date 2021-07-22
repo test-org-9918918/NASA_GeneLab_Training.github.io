@@ -4,16 +4,16 @@
 #SBATCH --output=GLDS-104_aligned_multiqc_report.out
 #SBATCH --mem=16000
 #SBATCH --partition=nodes
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-in_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/02-STAR_Alignment/Log_files
-out_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/02-STAR_Alignment/aligned_multiqc_report
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
+
+in_dir=/path/to/GLDS-104/02-STAR_Alignment/Log_files
+out_dir=/path/to/GLDS-104/02-STAR_Alignment/aligned_multiqc_report
 
 echo ""
 echo "MultiQC version: "
