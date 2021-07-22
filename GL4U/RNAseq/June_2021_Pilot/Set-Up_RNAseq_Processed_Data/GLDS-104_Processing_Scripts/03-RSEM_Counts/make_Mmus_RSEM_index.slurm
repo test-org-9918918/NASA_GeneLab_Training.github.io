@@ -4,17 +4,17 @@
 #SBATCH --output=make_Mmus_RSEM_index.out
 #SBATCH --mem=60000
 #SBATCH --partition=nodes
-#
-#SBATCH --mail-user=amanda.m.saravia-butler@nasa.gov
-#SBATCH --mail-type=END
+
 
 start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 echo ""
 
-RSEMdir=/gpfs/scratch/asbutler/SJSU_course_material/RSEM_Indices/ensembl_101/Mus_musculus
-genome_gtf=/gpfs/scratch/asbutler/SJSU_course_material/genomes_gtf/ensembl_101/Mus_musculus
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
+
+RSEMdir=/path/to/RSEM_Indices/ensembl_101/Mus_musculus
+genome_gtf=/path/to/genomes_gtf/ensembl_101/Mus_musculus
 
 echo "RSEM version: "
 rsem-calculate-expression --version
