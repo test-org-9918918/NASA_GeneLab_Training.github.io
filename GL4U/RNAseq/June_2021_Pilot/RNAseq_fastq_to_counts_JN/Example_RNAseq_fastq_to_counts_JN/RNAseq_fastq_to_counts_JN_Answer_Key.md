@@ -5,8 +5,9 @@
 
 **Take a look at the multiQC report of the raw fastQC data above and answer the following questions:**
 1.	Which sample was sequenced at the greatest read depth? the least read depth? (Hint: See M Seqs under "General Statistics")
-> Greatest: GC_Rep1 (85.7 Million Reads)
-> Least: FLT_Rep2 (65.2 Million Reads)
+    > Greatest: GC_Rep1 (85.7 Million Reads)
+    >
+    > Least: FLT_Rep2 (65.2 Million Reads)
 
 2.	What do you notice about the quality of the raw sequence data? Are there any differences between the forward and reverse reads?
 The quality is overall good (>Q28).
