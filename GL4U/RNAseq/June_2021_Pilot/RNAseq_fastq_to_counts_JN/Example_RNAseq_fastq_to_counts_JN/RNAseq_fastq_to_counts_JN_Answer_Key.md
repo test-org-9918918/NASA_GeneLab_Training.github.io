@@ -21,52 +21,56 @@
 	> Yes, to remove the adapter sequences.
 
 ---
+### Section 2a. Trim and Filter Raw Sequence Data with Trim Galore!
 
-2a. Trim and Filter Raw Sequence Data with Trim Galore!
+**Any idea why we would want to do this (trim/filter the data) before aligning to the reference genome?**
+> Removing any bases that were artificially added and thus were not generated from the organism’s DNA (represented by the reference genome), will improve the quality of alignment.
 
-Any idea why we would want to do this (trim/filter the data) before aligning to the reference genome?
-Removing any bases that were artificially added and thus were not generated from the organism’s DNA (represented by the reference genome), will improve the quality of alignment.
-
-Take a look at the === Summary === section of both the forward and reverse read trimming reports and answer the following questions:
+**Take a look at the === Summary === section of both the forward and reverse read trimming reports and answer the following questions:**
 
 1.	How many forward reads were processed?
-68,373,507
+	> 68,373,507
 
 2.	How many reverse reads were processed?
-68,373,507
+	> 68,373,507
 
 3.	Are the total number of forward and reverse reads processed the same or different? Should these numbers be the same? Why?
-The same.
-Yes, because the same RNA fragment was sequenced in the forward and reverse directions.
+	> The same.
+	>
+	> Yes, because the same RNA fragment was sequenced in the forward and reverse directions.
 
 4.	Were any adapters detected in the forward or reverse reads? If yes, how many forward reads contained adapters? How many reverse reads contained adapters? Are these numbers the same or different?
-Yes, forward reads with adapters: 22,398,255 (32.8%)
-Yes, reverse reads with adapters: 24,222,277 (35.4%)
-Different
+	> Yes, forward reads with adapters: 22,398,255 (32.8%)
+	>
+	> Yes, reverse reads with adapters: 24,222,277 (35.4%)
+	>
+	> Different
 
 5.	After adapters were trimmed from the forward and reverse reads, were any reads removed? Why?
-No, because after removing base pairs due to adapter contamination and poor quality, all forward and reverse reads still contained base pairs that passed quality filter. 
+	> No, because after removing base pairs due to adapter contamination and poor quality, all forward and reverse reads still contained base pairs that passed quality filter. 
 
 6.	How many base pairs were removed due to poor quality in the forward reads? What about the reverse reads?
-Forward: 5,291,484 bp (0.1%)
-Reverse: 18,564,191 bp (0.3%)
+	> Forward: 5,291,484 bp (0.1%)
+	>
+	> Reverse: 18,564,191 bp (0.3%)
 
 7.	After filtering base pairs for quality, what percent of base pairs were removed from the forward reads? What about the reverse reads?
-Forward: 0.4% of bp (98.6% of bp were written / passed filter)
-Reverse: 0.3% of bp (98.4% of bp were written / passed filter)
+	> Forward: 0.4% of bp (98.6% of bp were written / passed filter)
+	>
+	> Reverse: 0.3% of bp (98.4% of bp were written / passed filter)
 
 8.	Did the raw forward or raw reverse reads have better quality? How do you know?
-Forward - fewer base pairs were removed due to adapter contamination and/or poor quality (note: read quality can also be determined by the multiqc report of the raw fastqc data)
+	> Forward - fewer base pairs were removed due to adapter contamination and/or poor quality (note: read quality can also be determined by the multiqc report of the raw fastqc data)
 
-Look at the bottom of the reverse read trimming report and answer the following questions:
+**Look at the bottom of the reverse read trimming report and answer the following questions:**
 
 1.	After trimming and filtering, did any read pairs fail to meet the 20bp read length cutoff? If yes, how many?
-Yes, 46734 (0.07%) 
+	> Yes, 46734 (0.07%) 
 
 2.	Why is this information only contained in the reverse read trimming report?
-Because the number of forward and reverse reads have to be the same. So, the if the forward read of a fragment was 40bp after trimming (passing the 20bp cutoff) but the respective reverse read of that same fragment was 19bp after trimming (failing the 20bp cutoff) then both the forward and reverse read for the fragment must be removed.
+	> Because the number of forward and reverse reads have to be the same. So, the if the forward read of a fragment was 40bp after trimming (passing the 20bp cutoff) but the respective reverse read of that same fragment was 19bp after trimming (failing the 20bp cutoff) then both the forward and reverse read for the fragment must be removed.
 
-
+---
 2b. Trimmed Data QC with FastQC - Compiled with MultiQC
 
 Take a look at the multiQC report of the trimmed fastQC data above and answer the following questions:
