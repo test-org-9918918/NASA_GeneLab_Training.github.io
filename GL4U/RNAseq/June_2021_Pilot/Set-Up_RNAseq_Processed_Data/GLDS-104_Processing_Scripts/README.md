@@ -3,7 +3,7 @@ This dataset was processed with [GL-DPPD-7104-A](https://github.com/nasa/GeneLab
 
 These samples were processed in batch using the SLURM job scheduler on the San Jose State University (SJSU) cluster. The following sub-directories contain the scripts used to generate each level of processed data.
   - [00-RawData](00-RawData): Slurm scripts used to generate raw fastQC and multiQC reports
-  - [01-TG_PreProc](01-TG_Preproc): Slurm scripts used to generate trimmed reads, trimmed fastQC and multiQC reports
+  - [01-TG_PreProc](01-TG_PreProc): Slurm scripts used to generate trimmed reads, trimmed fastQC and multiQC reports
   - [02-STAR_Alignment](02-STAR_Alignment): Slurm scripts used to generate STAR reference and STAR alignment files
   - [03-RSEM_Counts](03-RSEM_Counts): Slurm scripts used to generate RSEM reference and RSEM count files
   - [04-05-DESeq2_NormCounts_DGE](04-05-DESeq2_NormCounts_DGE): Slurm and R scripts used to generate raw and normlaized counts tables, differential gene expression (DGE), and DGE tables with annotations
