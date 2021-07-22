@@ -12,8 +12,10 @@ start=$(date +%s)
 echo "start time: $start"
 echo $HOSTNAME
 
-in_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/00-RawData/FastQC_Reports
-out_dir=/gpfs/scratch/asbutler/BioCS123B/GLDS-104/00-RawData/FastQC_Reports/raw_multiqc_report
+source activate /path/to/anaconda3/envs/rnaseq_v1.0
+
+in_dir=/path/to/GLDS-104/00-RawData/FastQC_Reports
+out_dir=/path/to/GLDS-104/00-RawData/FastQC_Reports/raw_multiqc_report
 
 echo "MultiQC version: "
 multiqc --version
