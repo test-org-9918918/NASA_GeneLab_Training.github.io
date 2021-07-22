@@ -158,56 +158,59 @@
 ---
 ### Section 4b. Compile Alignment Log Files with MultiQC
 
-Take a look at the multiQC report of the alignment data above and answer the following questions:
+**Take a look at the multiQC report of the alignment data above and answer the following questions:**
 
 1.	What are the min and max % uniquely aligned reads for all samples?
-Min: 75.9% (GC_Rep6)
-Max: 80.2% (FLT_Rep3)
+	> Min: 75.9% (GC_Rep6)
+	>
+	> Max: 80.2% (FLT_Rep3)
 
 2.	What are the min and max % of aligned reads that map to multiple locations?
-Min: 11.0% (FLT_Rep3)
-Max: 13.0% (tie: GC_Rep3 and GC_Rep4)
+	> Min: 11.0% (FLT_Rep3)
+	>
+	> Max: 13.0% (tie: GC_Rep3 and GC_Rep4)
 
+---
+## Section 6. Count Aligned Reads with RSEM
 
-6. Count Aligned Reads with RSEM
-You probably saw many lines with messages like this: Warning: Read J00113:162:H7W32BBXX:1:2205:32065:27443 is ignored due to at least one of the mates' length < seed length (= 25)! What does this warning mean? (Hint: take a look at the RSEM user guide linked above.) Should we be concerned about this warning?
-It means that the read will be ignored in the counting process because the read itself or its mate had a length less that the seed length of 25 (set by default).
+**You probably saw many lines with messages like this: Warning: Read J00113:162:H7W32BBXX:1:2205:32065:27443 is ignored due to at least one of the mates' length < seed length (= 25)! What does this warning mean? (Hint: take a look at the RSEM user guide linked above.) Should we be concerned about this warning?**
+> It means that the read will be ignored in the counting process because the read itself or its mate had a length less that the seed length of 25 (set by default).
+> 
+> From the RSEM user guide:
+> --seed-length <int>
+	> Seed length used by the read aligner. Providing the correct value is important for RSEM. If RSEM runs Bowtie, it uses this value for Bowtie's seed length parameter. Any read with its or at least one of its mates' (for paired-end reads) length less than this value will be ignored. If the references are not added poly(A) tails, the minimum allowed value is 5, otherwise, the minimum allowed value is 25. Note that this script will only check if the value >= 5 and give a warning message if the value < 25 but >= 5. (Default: 25)
+> 
+> No, we don’t need to be concerned.
 
-From the RSEM user guide:
---seed-length <int>
-Seed length used by the read aligner. Providing the correct value is important for RSEM. If RSEM runs Bowtie, it uses this value for Bowtie's seed length parameter. Any read with its or at least one of its mates' (for paired-end reads) length less than this value will be ignored. If the references are not added poly(A) tails, the minimum allowed value is 5, otherwise, the minimum allowed value is 25. Note that this script will only check if the value >= 5 and give a warning message if the value < 25 but >= 5. (Default: 25)
-
-No, we don’t need to be concerned.
-
-Now that you know what the fields mean, look at the FLT_Rep1.genes.results file above and answer the following questions:
+**Now that you know what the fields mean, look at the FLT_Rep1.genes.results file above and answer the following questions:** 
 
 1.	What is the first gene listed?
-ENSMUSG00000000001
+	> ENSMUSG00000000001
 
 2.	For that first gene,
-a. What is the gene length? 
-3262.00 bp
+	a. What is the gene length? 
+	> 3262.00 bp
 
-b. What is the expected count?
-869.00
+	b. What is the expected count?
+	> 869.00
 
-c. What is the TPM value?
-5.95
+	c. What is the TPM value?
+	> 5.95
 
 3.	What are those values for the third gene listed?
-ENSMUSG00000000028: 1863.69; 91.00; 1.15
+	> ENSMUSG00000000028: 1863.69; 91.00; 1.15
 
 
-Look at the FLT_Rep1.isoforms.results file above and answer the following questions:
+**Look at the FLT_Rep1.isoforms.results file above and answer the following questions:**
 
 1.	Calculate the sum of the expected count values for all isoforms associated with this gene: ENSMUSG00000000028.
-74.70 + 10.19 + 6.11 + 0.00 = 91.00
+	> 74.70 + 10.19 + 6.11 + 0.00 = 91.00
 
 2.	How does that value compare with the expected count for gene ENSMUSG00000000028 in the FLT_Rep1.genes.results file?
-It’s the same.
+	> It’s the same.
 
-
-7. Generate Raw Counts Table
+---
+## Section 7. Generate Raw Counts Table
 
 Look at the beginning of the Unnormalized Counts table above and answer the following questions:
 1.	How many genes are shown?
