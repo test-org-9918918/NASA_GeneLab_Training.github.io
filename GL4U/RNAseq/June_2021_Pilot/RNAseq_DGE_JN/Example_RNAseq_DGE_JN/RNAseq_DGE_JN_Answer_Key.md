@@ -42,12 +42,12 @@
 **Recall:**
 
 •	**What issues do you think the differences in read depth could cause? Keep in mind we are about to perform a differential gene expression analysis where we are directly comparing the expression of each gene between samples.**
-	>
-	> Samples with deeper read depth (i.e. more total reads) will appear to have higher expression of many genes than samples with shallower read depth (i.e less total reads).
+
+> Samples with deeper read depth (i.e. more total reads) will appear to have higher expression of many genes than samples with shallower read depth (i.e less total reads).
 
 •	**How could this affect interpretation of downstream results?**
-	>
-	> We could be tricked into thinking that certain genes are significantly differentially expressed biologically, when it is really a technical artifact.
+
+> We could be tricked into thinking that certain genes are significantly differentially expressed biologically, when it is really a technical artifact.
 
 ---
 ### Section 2a. PCA of Raw, Unnormalized Count Data
@@ -136,55 +136,58 @@
 ---
 ### Section 3b. Add Gene Annotations
 
-Look at the organism_table above and answer the following questions:
+**Look at the organism_table above and answer the following questions:**
 1.	What are the first 6 organisms listed in this table?
-human, mouse, rat, zebrafish, fly, worm
+	> human, mouse, rat, zebrafish, fly, worm
 
 2.	What is the annotation database used for mice? for humans?
-Mice: org.Mm.eg.db 
-Human: org.Hs.eg.db
+	> Mice: org.Mm.eg.db 
+	> 
+	> Human: org.Hs.eg.db
 
-Looking at the Gene Annotation table above, answer the following questions:
+**Looking at the Gene Annotation table above, answer the following questions:**
 1.	How many different gene annotations does the table contain?
-5
+	> 5
 
 2.	What is the gene name and symbol of ENSEMBL ID: ENSMUSG00000000028? What about ENSEMBL ID: ENSMUSG00000000031?
-ENSMUSG00000000028: cell division cycle 45, Cdc45 
-ENSMUSG00000000031: imprinted maternally expressed transcript, H19
+	> ENSMUSG00000000028: cell division cycle 45, Cdc45 
+	>
+	> ENSMUSG00000000031: imprinted maternally expressed transcript, H19
 
-Looking at the first row of our Gene Annotations table above, answer the following questions:
+**Looking at the first row of our Gene Annotations table above, answer the following questions:**
 1.	What is the name of the gene shown?
-guanine nucleotide binding protein (G protein), alpha inhibiting 3
+	> guanine nucleotide binding protein (G protein), alpha inhibiting 3
 
 2.	How many biological functions involve Gnai3? (Hint: Look at the GOSLIM IDs)
-67
+	> 67
 
+---
+## Section 4. DGE Data Visualization
 
-4. DGE Data Visualization
-
-Use the filtered DGE table to answer the following questions:
+**Use the filtered DGE table to answer the following questions:**
 1.	Why was the adjusted p-value used to determine significance rather than p-value?
-Because we are performing multiple comparisons (over 20k genes, aka variables)
+	> Because we are performing multiple comparisons (over 20k genes, aka variables)
 
 2.	How many significant DEGs are there? (Hint: Look at the dimensions of the matrix (reported in rows by columns, or genes by samples)
-768
+	> 768
 
 3.	Based on the adjusted p-value cutoff used, how confident are we (in %) that those genes are DE?
-95%
+	> 95%
 
+---
+### Section 4a. PCA
 
-4a. PCA
-
-Compare this PCA plot to the plot we made in Step 2b using all normalized counts, and answer the following questions:
+**Compare this PCA plot to the plot we made in Step 2b using all normalized counts, and answer the following questions:**
 1.	How has the percent of variance explained by PC1 changed? What is responsible for this change?
-Increased 
-We subset to only differentially expressed genes, so since PC1 is indicative of the differences between FLT and GC samples, when we only use genes that we know are significantly different between these groups, PC1 will now account for even more of the overall differences among samples.
+	> Increased 
+	>
+	> We subset to only differentially expressed genes, so since PC1 is indicative of the differences between FLT and GC samples, when we only use genes that we know are significantly different between these groups, PC1 will now account for even more of the overall differences among samples.
 
 2.	Is there anything interesting to note about PC2?
-It has also increased
+	> It has also increased
 
-
-4b. Heatmap
+---
+### Section 4b. Heatmap
 
 Use the heatmap to answer the following questions:
 1.	What overall trends do you notice in the expression of the DEGs in samples within the same group? What about samples in different groups?
