@@ -4,10 +4,10 @@ library(tidyverse)
 
 organism <- "MOUSE"
 
-work_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/processing_scripts/04-05-DESeq2_NormCounts_DGE"
-counts_dir="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/03-RSEM_Counts"
-norm_output="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/04-DESeq2_NormCounts"
-DGE_output="/gpfs/scratch/asbutler/BioCS123B/GLDS-104/05-DESeq2_DGE"
+work_dir="/path/to/GLDS-104/processing_scripts/04-05-DESeq2_NormCounts_DGE"
+counts_dir="/path/to/GLDS-104/03-RSEM_Counts"
+norm_output="/path/to/GLDS-104/04-DESeq2_NormCounts"
+DGE_output="/path/to/GLDS-104/05-DESeq2_DGE"
 
 setwd(file.path(work_dir))
 
