@@ -49,30 +49,30 @@
 
 |Time (PDT)|Activity|Video Recording|
 |:---------|:-------|:--------------|
-|9am - 930am|Fastq-to-Counts JN – through alignment|
-|930am - 1015am|RNAseq Overview through counts table (lecture)|
-|1015am - 1040am|Fastq-to-Counts JN through sample counts|
+|9am - 930am|Fastq-to-Counts JN – through alignment|[Day4 Part 1 (of 4)]()|
+|930am - 1015am|RNAseq Overview through counts table (lecture)|[Day4 Part 1 (of 4)]()|
+|1015am - 1040am|Fastq-to-Counts JN through sample counts|[Day4 Part 1 (of 4)]()|
 |1040am - 11am|BREAK|N/A|
-|11am - 1130am|Finish Fastq-to-Counts JN|
-|1130am - noon|Finish RNAseq Overview (lecture)|
+|11am - 1130am|Finish Fastq-to-Counts JN|[Day4 Part 2 (of 4)]()|
+|1130am - noon|Finish RNAseq Overview (lecture)|[Day4 Part 2 (of 4)]()|
 |noon - 1pm|LUNCH|N/A|
-|1pm - 210pm|DGE JN step 1 (import and format data)|
+|1pm - 210pm|DGE JN step 1 (import and format data)|[Day4 Part 3 (of 4)]()|
 |210pm - 230pm|BREAK|N/A|
-|230pm - 5pm|Stats lecture through end of hypothesis testing|
+|230pm - 5pm|Stats lecture through end of hypothesis testing|[Day4 Part 4 (of 4)]()|
 
 ---
 ## Day 5 Friday (6/11/2021):
 
 |Time (PDT)|Activity|Video Recording|
 |:---------|:-------|:--------------|
-|9am - 930am|Questions from yesterday|
-|930am - 1030am|Stats lecture through end of DESeq2|
+|9am - 930am|Questions from yesterday|[Day5 Part 1 (of 4)]()|
+|930am - 1030am|Stats lecture through end of DESeq2|[Day5 Part 1 (of 4)]()|
 |1030am - 1050am|BREAK|N/A|
-|1050am - noon|DGE JN step 2 (DESeq2 data normalization and PCAs)|
+|1050am - noon|DGE JN step 2 (DESeq2 data normalization and PCAs)|[Day5 Part 2 (of 4)]()|
 |noon - 1pm|LUNCH|N/A|
-|1pm - 130pm|DGE JN step 3 (DESeq2 DGE)|
-|130pm - 2pm|Finish Stats lecture|
-|2pm - 3pm|Start DGE JN step 4 (data visualization)|
+|1pm - 130pm|DGE JN step 3 (DESeq2 DGE)|[Day5 Part 3 (of 4)]()|
+|130pm - 2pm|Finish Stats lecture|[Day5 Part 3 (of 4)]()|
+|2pm - 3pm|Start DGE JN step 4 (data visualization)|[Day5 Part 3 (of 4)]()|
 |3pm - 320pm|BREAK|N/A|
-|320pm - 430pm|Finish DGE JN|
-|430pm - 5pm|Wrap up / Final questions and comments|
+|320pm - 430pm|Finish DGE JN|[Day5 Part 4 (of 4)]()|
+|430pm - 5pm|Wrap up / Final questions and comments|[Day5 Part 4 (of 4)]()|
