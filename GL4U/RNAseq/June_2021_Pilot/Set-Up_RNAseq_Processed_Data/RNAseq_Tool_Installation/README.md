@@ -1,6 +1,6 @@
 # Instructions for installing tools required to process RNAseq data using the GeneLab pipeline
 
-> **This directory holds yaml files and instructions for how to install two conda environments, RNAseq_fq_to_counts_tools and RNAseq_R_tools, that contain all the software programs needed to generate the main set of [GLDS-104](https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-104/) processed RNAseq data used in this bootcamp. Additionally, instructions and scripts for creating the directory structure used in the [GLDS-104 processing scripts](../GLDS-104_Processing_Scripts) are provided.**  
+> **This directory holds yaml files and instructions for how to install two conda environments, [RNAseq_fq_to_counts_tools](RNAseq_fq_to_counts_tools.yml) and [RNAseq_R_tools](RNAseq_R_tools.yml), that contain all the software programs needed to generate the main set of [GLDS-104](https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-104/) processed RNAseq data used in this bootcamp. Additionally, instructions and scripts for creating the directory structure used in the [GLDS-104 processing scripts](../GLDS-104_Processing_Scripts) are provided.**  
 
 ---
 
