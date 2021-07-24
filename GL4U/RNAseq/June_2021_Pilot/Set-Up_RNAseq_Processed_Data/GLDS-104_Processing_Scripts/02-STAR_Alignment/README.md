@@ -1,4 +1,5 @@
 ## Scripts used to generate the main set of alignment and respective QC data:
+**Note:** The scripts must be run in the order they are listed below:
 - [make_Mmus_RL-100_STAR_index.slurm](make_Mmus_RL-100_STAR_index.slurm)
 - [STAR_align.slurm](STAR_align.slurm)
 - [align_multiqc.slurm](align_multiqc.slurm)
