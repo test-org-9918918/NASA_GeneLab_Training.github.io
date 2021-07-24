@@ -55,6 +55,9 @@ call="STAR --twopassMode Basic \
 echo $call
 eval $call
 
+# Copy Log.final.out file to the /Log_files subdirectory
+cp /path/to/GLDS-104/02-STAR_Alignment/${sample}/${sample}_Log.final.out /path/to/GLDS-104/02-STAR_Alignment/Log_files/
+
 echo ""
 end=$(date +%s)
 echo "end time: $end"
