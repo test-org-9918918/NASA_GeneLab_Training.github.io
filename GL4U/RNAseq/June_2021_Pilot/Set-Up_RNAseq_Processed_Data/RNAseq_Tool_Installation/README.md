@@ -20,12 +20,12 @@
   Check proper installation by activating the RNAseq_fq_to_counts_tools conda environment with the following command:
   
   ```
-  conda activate RNAseq_fq_to_counts
+  conda activate RNAseq_fq_to_counts_tools
   ``` 
   
   > Notes: 
   > - Depending on the system used, the above command may not work, if that's the case try activating the conda environment with this command:
-  > `source activate RNAseq_fq_to_counts`
+  > `source activate RNAseq_fq_to_counts_tools`
   > - This environment is activated when running scripts to generate the following main set of processed data:
   >   - [raw QC data](../GLDS-104_Processing_Scripts/00-RawData)
   >   - [trimmed and respective QC data](../GLDS-104_Processing_Scripts/01-TG_PreProc)
