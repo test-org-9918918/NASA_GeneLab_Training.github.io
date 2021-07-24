@@ -92,7 +92,7 @@
    2. Use a text editor such as [nano](https://www.nano-editor.org/) to change the `/path/to` indicated in each of the processing scripts you downloaded in step 5i to match the path you navigated to in step 1.
 
       > **Notes:**
-      > - The [](#install-prerequisites)
+      > - The `/path/to` specified in the part of each script to activate the conda environment should be replaced with the path to where [anaconda3 was installed on your system](#install-prerequisites).
       > - If your system uses the [slurm](https://slurm.schedmd.com/overview.html) job scheduler, you will also have to customize the #SBATCH options to be consistent with your system's slurm settings (consult your system administrator regarding the settings needed for your system).  
       > - If you are not using the slurm job scheduler, you will have to remove the #SBATCH options from each slurm script and replace them with the equivalant options for the job scheduler your system uses.  
    
