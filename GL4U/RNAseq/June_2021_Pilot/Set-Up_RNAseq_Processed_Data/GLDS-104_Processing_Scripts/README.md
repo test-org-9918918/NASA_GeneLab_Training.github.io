@@ -2,7 +2,7 @@
 This dataset was processed with [GL-DPPD-7104-A](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/Previous_GL-DPPD-7101_Revisions/GL-DPPD-7101-A.md).
 
 These samples were processed in batch using the SLURM job scheduler on the San Jose State University (SJSU) cluster. The following sub-directories contain the scripts used to generate each level of processed data.
-> Note: Prior to running these script on a cluster, the paths to the conda environment, parent `/GLDS-104` directory, reference genome files, `/STAR_Indices`, and `/RSEM_Indices` directories must be defined (replacing `/path/to` indicated in each respective script). 
+> Note: Prior to running these script on a cluster, the paths to the conda environment, `/GLDS-104`, `/genomes_gtf`, `/STAR_Indices`, and `/RSEM_Indices` directories must be defined (replacing `/path/to` indicated in each respective script). 
 > 
 > The instructor should also work with their system administrator to ensure the job scheduler commands in each script are consisent with the job scheduler used on the cluster these scripts will be executed. 
   - [00-RawData](00-RawData): Slurm scripts used to generate raw fastQC and multiQC reports
