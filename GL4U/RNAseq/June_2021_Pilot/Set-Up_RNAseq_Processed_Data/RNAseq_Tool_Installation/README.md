@@ -87,7 +87,7 @@
 
 5. Your directory structure should now be set up. To process GLDS-104 using the same scripts that were used to create the main set of processed data for this bootcamp, follow the steps below:  
 
-   1. Download the scripts and metadata files that were used to processes your select dataset into the respective subdirectories (aka grandchild directories) of the `processing_scripts` child directory you made in step 4. Note: The processing scripts for all GeneLab RNAseq processed datasets are provided in the [RNAseq/GLDS_Processing_Scripts](https://github.com/nasa/GeneLab_Data_Processing/tree/master/RNAseq/GLDS_Processing_Scripts) directory of this repository.  
+   1. Download the scripts and associated input files found in the [GLDS-104_Processing_Scripts](../GLDS-104_Processing_Scripts) directory into the respective subdirectories within the `GLDS-104/processing_scripts` directory you made in step 3.   
 
    2. Use a text editor such as [nano](https://www.nano-editor.org/) to change the paths indicated in each of the processing scripts you downloaded in step 5i to match the path to the top level (aka parent) directory you created in step 2.
 
