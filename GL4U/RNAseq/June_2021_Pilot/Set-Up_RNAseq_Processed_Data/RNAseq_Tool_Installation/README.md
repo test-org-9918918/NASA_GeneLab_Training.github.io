@@ -72,10 +72,11 @@
   2. Download the [RNAseq_bc_June_2021_dir.sh](RNAseq_bc_June_2021_dir.sh) script into the location you navigated to in step 1 then run the command below to make the script executable:
   ```
   chmod u+x RNAseq_bc_June_2021_dir.sh
-  ```  
-  4. Set up the top level (aka parent) directory for the GLDS dataset you want to process using the `mkdir` command as follows (the example below is for GLDS-245):
+  ``` 
+  
+  3. Set up the directory structure by executing the [RNAseq_bc_June_2021_dir.sh](RNAseq_bc_June_2021_dir.sh) script using the following command:
   ```
-  mkdir GLDS-245
+  bash RNAseq_bc_June_2021_dir.sh
   ```  
   
   3. Go into the top level directory that you created in step 2 using the `cd` command as shown in the example below:
