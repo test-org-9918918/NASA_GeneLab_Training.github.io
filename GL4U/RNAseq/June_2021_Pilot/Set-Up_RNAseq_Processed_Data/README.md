@@ -25,7 +25,7 @@ Exact processing scripts to generate the processed data for [GLDS-104](https://g
 ---
 
 ## Required Resources
-The following resources are required to generate the main set of GLDS-104 processed RNAseq data as detailed in this directory:
+The following compute resources are required to generate the main set of GLDS-104 processed RNAseq data as detailed in this directory:
 - XXGB RAM
 - XX CPUs
 - XXGB storage space
