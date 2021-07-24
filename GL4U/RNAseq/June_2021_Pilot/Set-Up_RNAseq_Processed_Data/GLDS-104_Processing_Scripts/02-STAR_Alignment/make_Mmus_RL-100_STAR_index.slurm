@@ -11,7 +11,7 @@ echo "start time: $start"
 echo $HOSTNAME
 echo ""
 
-source activate /path/to/anaconda3/envs/rnaseq_v1.0
+source activate /path/to/anaconda3/envs/RNAseq_fq_to_counts_tools
 
 STARdir=/path/to/STAR_Indices/ensembl_101/Mus_musculus_RL-100
 genome_gtf=/path/to/genomes_gtf/ensembl_101/Mus_musculus
