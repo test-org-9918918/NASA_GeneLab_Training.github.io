@@ -93,8 +93,8 @@
 
       > **Notes:**
       > - The `/path/to` specified in the part of each script to activate the conda environment should be replaced with the path to where [anaconda3 was installed on your system](#install-prerequisites).
-      > - If your system uses the [slurm](https://slurm.schedmd.com/overview.html) job scheduler, you will also have to customize the #SBATCH options to be consistent with your system's slurm settings (consult your system administrator regarding the settings needed for your system).  
-      > - If you are not using the slurm job scheduler, you will have to remove the #SBATCH options from each slurm script and replace them with the equivalant options for the job scheduler your system uses.  
+      > - If your system uses the [SLURM](https://slurm.schedmd.com/overview.html) job scheduler, you will also have to customize the #SBATCH options in each SLURM script to be consistent with your system's SLURM settings (consult your system administrator regarding the settings needed for your system).  
+      > - If you are not using the slurm job scheduler, you will have to remove the #SBATCH options from each SLURM script and replace them with the equivalant options for the job scheduler your system uses.  
    
    3. If you wish to start processing from the beginning of the pipeline using raw sequence data, download the raw fastq files from the [GeneLab Repository](https://genelab-data.ndc.nasa.gov/genelab/projects) for your select dataset by clicking on 'STUDY FILES' in the left panel then click the arrowhead next to 'GeneLab Processed RNA-Seq Files' then click on 'Merged sequence data' then select and download all the *raw.fastq.gz files into the `/GLDS-#/00-RawData/Fastq` directory you made in steps 3 and 4.  
    
