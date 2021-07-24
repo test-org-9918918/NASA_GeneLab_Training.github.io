@@ -24,13 +24,15 @@
   ``` 
   
   > Notes: 
-  > This environment is activated when running scripts to generate the following main set of processed data:
-  > - [raw QC data](../GLDS-104_Processing_Scripts/00-RawData)
-  > - [trimmed and respective QC data](../GLDS-104_Processing_Scripts/01-TG_PreProc)
-  > - [alignment and respective QC data](../GLDS-104_Processing_Scripts/02-STAR_Alignment)
-  > - [count data](../GLDS-104_Processing_Scripts/03-RSEM_Counts)
-  > - [DGE data](../GLDS-104_Processing_Scripts/04-05-DESeq2_NormCounts_DGE)
-  > At least 45GB of RAM is required to run the tools in the RNAseq_fq_to_counts_tools conda environment.
+  > - Depending on the system used, the above command may not work, if that's the case try activating the conda environment with the command below:
+  > `source activate RNAseq_fq_to_counts`
+  > - This environment is activated when running scripts to generate the following main set of processed data:
+  >   - [raw QC data](../GLDS-104_Processing_Scripts/00-RawData)
+  >   - [trimmed and respective QC data](../GLDS-104_Processing_Scripts/01-TG_PreProc)
+  >   - [alignment and respective QC data](../GLDS-104_Processing_Scripts/02-STAR_Alignment)
+  >   - [count data](../GLDS-104_Processing_Scripts/03-RSEM_Counts)
+  >   - [DGE data](../GLDS-104_Processing_Scripts/04-05-DESeq2_NormCounts_DGE)
+  > - At least 45GB of RAM is required to run the tools in the RNAseq_fq_to_counts_tools conda environment.
 
 <br>
 
