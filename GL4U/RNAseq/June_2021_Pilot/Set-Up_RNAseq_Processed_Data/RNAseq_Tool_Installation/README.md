@@ -24,7 +24,7 @@
   ``` 
   
   > Notes: 
-  > - Depending on the system used, the above command may not work, if that's the case try activating the conda environment with the command below:
+  > - Depending on the system used, the above command may not work, if that's the case try activating the conda environment with this command:
   > `source activate RNAseq_fq_to_counts`
   > - This environment is activated when running scripts to generate the following main set of processed data:
   >   - [raw QC data](../GLDS-104_Processing_Scripts/00-RawData)
