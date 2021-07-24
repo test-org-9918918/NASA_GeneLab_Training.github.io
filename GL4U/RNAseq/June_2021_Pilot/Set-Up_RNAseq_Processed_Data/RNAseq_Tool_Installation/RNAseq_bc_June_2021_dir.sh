@@ -1,6 +1,6 @@
 mkdir GLDS-104
 
-mkdir GLDS-104/00-RawData  01-TG_Preproc  02-STAR_Alignment  03-RSEM_Counts  04-DESeq2_NormCounts  05-DESeq2_DGE  Metadata processing_scripts
+mkdir GLDS-104/00-RawData
 mkdir GLDS-104/00-RawData/Fastq
 mkdir GLDS-104/00-RawData/FastQC_Reports
 mkdir GLDS-104/00-RawData/FastQC_Reports/raw_multiqc_report
@@ -23,9 +23,15 @@ mkdir GLDS-104/02-STAR_Alignment
 mkdir GLDS-104/02-STAR_Alignment/Log_files
 mkdir GLDS-104/02-STAR_Alignment/aligned_multiqc_report
 
+mkdir RSEM_Indices
+mkdir RSEM_Indices/ensembl_101
+mkdir RSEM_Indices/ensembl_101/Mus_musculus
 
+mkdir GLDS-104/03-RSEM_Counts
 
-mkdir GLDS-104/05-DESeq2_DGE/ERCC_NormDGE
+mkdir GLDS-104/04-DESeq2_NormCounts
+
+mkdir GLDS-104/05-DESeq2_DGE
 
 mkdir GLDS-104/processing_scripts/00-RawData
 mkdir GLDS-104/processing_scripts/01-TG_Preproc
