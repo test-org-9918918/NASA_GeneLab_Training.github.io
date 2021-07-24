@@ -1,5 +1,7 @@
 mkdir GLDS-104
 
+mkdir GLDS-104/Metadata
+
 mkdir GLDS-104/00-RawData
 mkdir GLDS-104/00-RawData/Fastq
 mkdir GLDS-104/00-RawData/FastQC_Reports
@@ -33,6 +35,7 @@ mkdir GLDS-104/04-DESeq2_NormCounts
 
 mkdir GLDS-104/05-DESeq2_DGE
 
+mkdir GLDS-104/processing_scripts
 mkdir GLDS-104/processing_scripts/00-RawData
 mkdir GLDS-104/processing_scripts/01-TG_Preproc
 mkdir GLDS-104/processing_scripts/02-STAR_Alignment
