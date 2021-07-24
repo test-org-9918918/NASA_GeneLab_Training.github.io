@@ -71,19 +71,19 @@
      > Once there run the `pwd` command to show the path to this location, which will be needed to modify the [GLDS-104_Processing_Scripts](../GLDS-104_Processing_Scripts) as described in step X.
   
   2. Download the [RNAseq_bc_June_2021_dir.sh](RNAseq_bc_June_2021_dir.sh) script into the location you navigated to in step 1 then run the command below to make the script executable:
-  ```
-  chmod u+x RNAseq_bc_June_2021_dir.sh
-  ``` 
+     ```
+     chmod u+x RNAseq_bc_June_2021_dir.sh
+     ``` 
   
   3. Set up the directory structure by executing the [RNAseq_bc_June_2021_dir.sh](RNAseq_bc_June_2021_dir.sh) script using the following command:
-  ```
-  bash RNAseq_bc_June_2021_dir.sh
-  ```  
+     ```
+     bash RNAseq_bc_June_2021_dir.sh
+     ```  
   
-  3. Go into the top level directory that you created in step 2 using the `cd` command as shown in the example below:
-  ```
-  cd GLDS-245
-  ``` 
+  4. Navigate to the `/GLDS-104/Metadata` directory using the `cd` command as shown below and download the [GLDS-104_Group_Metadata.csv](GLDS-104_Group_Metadata.csv) and [organisms.csv](organisms.csv) files into that directory.
+     ```
+     cd GLDS-104/Metadata
+     ``` 
   
   4. Create all sub-directories (aka child and subsequent grandchild directories) within the top level directory using the GL_RNAseq_mkdir.sh script by executing the following command (make sure you first download the [GL_RNAseq_mkdir.sh](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/RNAseq_Tool_Install/GL_RNAseq_mkdir.sh) file and save it in the topy level direcroty you made in step 2):
   ```
