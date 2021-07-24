@@ -64,9 +64,9 @@
 
 <br>
 
-### Create RNAseq output directory structure
+### Create GLDS-104 RNAseq directory structure
 
-  To generate the same directory structure that GeneLab uses to organize the RNAseq processing pipeline output files, follow the instructions below:
+  To generate the GLDS-104 RNAseq directory structure used to hold the main set of processed data called in the bootcamp training materials, follow the instructions below:
   1. Use the `cd` command to navigate to the location on your device where you want to create the RNAseq directory structure.
   
   2. Set up the top level (aka parent) directory for the GLDS dataset you want to process using the `mkdir` command as follows (the example below is for GLDS-245):
