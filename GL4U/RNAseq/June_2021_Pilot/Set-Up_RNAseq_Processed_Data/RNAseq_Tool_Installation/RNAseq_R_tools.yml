@@ -1,0 +1,14 @@
+name: RNAseq_R_tools
+channels:
+  - bioconda
+  - conda-forge
+
+dependencies:
+  - r-base=4.0.3
+  - r-tidyverse
+  - bioconductor-deseq2
+  - libopenblas=0.3.7
+  - bioconductor-tximport
+  - bioconductor-stringdb
+  - bioconductor-panther.db
+  - bioconductor-org.mm.eg.db
