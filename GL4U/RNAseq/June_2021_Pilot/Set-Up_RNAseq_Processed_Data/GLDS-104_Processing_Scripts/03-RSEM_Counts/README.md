@@ -4,15 +4,8 @@
 - [rsem_count.slurm](rsem_count.slurm)
 
 ## Input files called in the scripts used to generate the main set of count data:
-- Prior to running the SLURM scripts above, the Ensembl reference files must be downloaded then uncompressed using the commands detailed [here](../02-STAR_Alignment#input-files-called-in-the-scripts-used-to-generate-the-main-set-of-alignment-and-respective-qc-data)
-- [Mus_musculus.GRCm38.dna.primary_assembly.fa.gz](http://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz)
-- [Mus_musculus.GRCm38.101.gtf.gz](http://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/Mus_musculus.GRCm38.101.gtf.gz)
-  > Note: The reference fasta and gtf files need to be uncompressed prior to use in the [make_Mmus_RL-100_STAR_index.slurm](make_Mmus_RL-100_STAR_index.slurm) script using the following commands:
-  > 
-  > `gunzip Mus_musculus.GRCm38.dna.primary_assembly.fa.gz`
-  > 
-  > `gunzip Mus_musculus.GRCm38.101.gtf.gz`
-- [samples.txt](../samples.txt)
+- Prior to running the SLURM scripts above, the Ensembl reference files must be downloaded then uncompressed using the commands detailed [here](../02-STAR_Alignment#input-files-called-in-the-scripts-used-to-generate-the-main-set-of-alignment-and-respective-qc-data).
+- The [samples.txt](../samples.txt) file needs to be in the same directory holding the SLURM scripts above prior to execution.
 
 ## Scripts submitted to the cluster's SLURM job scheduler in the RNAseq fastq to counts JN:
 - [rsem_count_FLT_Rep1.slurm](rsem_count_FLT_Rep1.slurm)
