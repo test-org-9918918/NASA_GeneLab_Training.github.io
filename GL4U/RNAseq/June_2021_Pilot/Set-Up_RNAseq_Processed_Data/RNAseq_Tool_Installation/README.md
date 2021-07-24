@@ -24,14 +24,13 @@
   ``` 
   
   > Notes: 
-  > - Depending on the system used, the above command may not work, if that's the case try activating the conda environment with this command:
+  > - Depending on the configuration of the system used, the above command may not work, if that's the case try activating the conda environment with this command:
   > `source activate RNAseq_fq_to_counts_tools`
   > - This environment is activated when running scripts to generate the following main set of processed data:
   >   - [raw QC data](../GLDS-104_Processing_Scripts/00-RawData)
   >   - [trimmed and respective QC data](../GLDS-104_Processing_Scripts/01-TG_PreProc)
   >   - [alignment and respective QC data](../GLDS-104_Processing_Scripts/02-STAR_Alignment)
   >   - [count data](../GLDS-104_Processing_Scripts/03-RSEM_Counts)
-  >   - [DGE data](../GLDS-104_Processing_Scripts/04-05-DESeq2_NormCounts_DGE)
   > - At least 45GB of RAM is required to run the tools in the RNAseq_fq_to_counts_tools conda environment.
 
 <br>
@@ -42,13 +41,17 @@
   conda env create -f RNAseq_R_tools.yml
   ```
 
-  Activate the RNAseq_R_tools conda environment with the following command:
-  > This environment needs to be activated to run step 7 of the [RNAseq processing pipeline](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/GL-DPPD-7101-C.md)
+  Check proper installation by activating the RNAseq_R_tools conda environment with the following command:
   
   ```
   conda activate RNAseq_R_tools
   ``` 
-  Note: The tools in the RNAseq_R_tools conda environment can be run on a standard laptop.
+  > Notes: 
+  > - Depending on the configuration of the system used, the above command may not work, if that's the case try activating the conda environment with this command:
+  > `source activate RNAseq_R_tools`
+  > - This environment is activated when running scripts to generate the following main set of processed data:
+  >   - [DGE data](../GLDS-104_Processing_Scripts/04-05-DESeq2_NormCounts_DGE)
+  > - The tools in the RNAseq_R_tools conda environment can be run on a standard laptop.
 
 <br>
 
