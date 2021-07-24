@@ -5,10 +5,11 @@
 - [align_multiqc.slurm](align_multiqc.slurm)
 
 ## Input files called in the scripts used to generate the main set of alignment and respective QC data:
-Download Ensembl reference files by running the following commands:
+Prior to running the SLURM scripts above, download then uncompress the Ensembl reference files by running the following commands:
 ```
-cd /path/to/genomes_gtf/ensembl_101/Mus_musculus
-curl 
+curl -L -o /path/to/genomes_gtf/ensembl_101/Mus_musculus/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz http://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz
+
+curl -L -o /path/to/genomes_gtf/ensembl_101/Mus_musculus/Mus_musculus.GRCm38.101.gtf.gz http://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/Mus_musculus.GRCm38.101.gtf.gz
 ```
 - [Mus_musculus.GRCm38.dna.primary_assembly.fa.gz](http://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz)
 - [Mus_musculus.GRCm38.101.gtf.gz](http://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/Mus_musculus.GRCm38.101.gtf.gz)
@@ -17,7 +18,7 @@ curl
   > `gunzip Mus_musculus.GRCm38.dna.primary_assembly.fa.gz`
   > 
   > `gunzip Mus_musculus.GRCm38.101.gtf.gz`
-- [samples.txt](../samples.txt)
+- The [samples.txt](../samples.txt) file needs to be in the same directory holding the SLURM scripts above prior to execution.
 
 ## Scripts submitted to the cluster's SLURM job scheduler in the RNAseq fastq to counts JN:
 - [STAR_align_FLT_Rep1.slurm](STAR_align_FLT_Rep1.slurm)
