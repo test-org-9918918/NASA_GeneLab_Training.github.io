@@ -17,3 +17,10 @@ Throughout the bootcamp, instruction transitioned between lectures and hands-on 
 |[Introduction to NASA, Space Biology, GeneLab, and the Command Line](Lectures/NASA_GL_CL_Intro)|[How to set up and run basic Unix and R commands on the command line and through the JN environment](Intro_JNs)|
 |[RNAseq and Data Processing Overview](Lectures/RNAseq_Overview)|[Process raw RNAseq data from GLDS-104 to generate gene count data](RNAseq_fastq_to_counts_JN)|
 |[Overview of the Statistics Used for RNAseq Data Analysis](Lectures/Statistics_Intro)|[Analyze RNAseq gene count data to generate differential gene expression data and corresponding visualizations](RNAseq_DGE_JN)|
+
+---
+## Required Resources
+The following compute resources are required to generate the main set of GLDS-104 processed RNAseq data as detailed in this directory:
+- XXGB RAM
+- XX CPUs
+- XXGB storage space
