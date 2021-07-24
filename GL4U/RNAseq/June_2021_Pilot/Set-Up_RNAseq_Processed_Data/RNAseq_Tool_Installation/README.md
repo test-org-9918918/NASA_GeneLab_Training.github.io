@@ -67,9 +67,13 @@
 ### Create GLDS-104 RNAseq directory structure
 
   To generate the GLDS-104 RNAseq directory structure used to hold the main set of processed data called in the bootcamp training materials, follow the instructions below:
-  1. Use the `cd` command to navigate to the location on your device where you want to create the RNAseq directory structure.
+  1. Use the `cd` command to navigate to the location on your system where you want to create the GLDS-104 RNAseq directory structure.
   
-  2. Set up the top level (aka parent) directory for the GLDS dataset you want to process using the `mkdir` command as follows (the example below is for GLDS-245):
+  2. Download the [RNAseq_bc_June_2021_dir.sh](RNAseq_bc_June_2021_dir.sh) script into the location you navigated to in step 1 then run the command below to make the script executable:
+  ```
+  chmod u+x RNAseq_bc_June_2021_dir.sh
+  ```  
+  4. Set up the top level (aka parent) directory for the GLDS dataset you want to process using the `mkdir` command as follows (the example below is for GLDS-245):
   ```
   mkdir GLDS-245
   ```  
