@@ -1,4 +1,5 @@
 ## Scripts used to generate the main set of trimmed and respective QC data:
+**Note:** The scripts must be run in the order they are listed below:
 - [trim-galore.slurm](trim-galore.slurm)
 - [trimmed_fastqc.slurm](trimmed_fastqc.slurm)
 - [trimmed_multiqc.slurm](trimmed_multiqc.slurm)
