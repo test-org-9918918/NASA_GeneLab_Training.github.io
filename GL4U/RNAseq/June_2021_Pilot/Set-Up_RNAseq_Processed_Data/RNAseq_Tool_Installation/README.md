@@ -68,7 +68,7 @@
 
   To generate the GLDS-104 RNAseq directory structure used to hold the main set of processed data called in the bootcamp training materials, follow the instructions below:
   1. Use the `cd` command to navigate to the location on your system where you want to create the GLDS-104 RNAseq directory structure.
-     > Once there run the `pwd` command to show the path to this location, which will be needed to modify the [GLDS-104_Processing_Scripts](../GLDS-104_Processing_Scripts) as described in step X.
+     > Once there run the `pwd` command to show the path to this location, which will be needed to modify the [GLDS-104_Processing_Scripts](../GLDS-104_Processing_Scripts) as described in step 5ii.
   
   2. Download the [RNAseq_bc_June_2021_dir.sh](RNAseq_bc_June_2021_dir.sh) script into the location you navigated to in step 1 then run the command below to make the script executable:
      ```
@@ -87,9 +87,9 @@
 
 5. Your directory structure should now be set up. To process GLDS-104 using the same scripts that were used to create the main set of processed data for this bootcamp, follow the steps below:  
 
-   1. Download the scripts and associated input files found in the [GLDS-104_Processing_Scripts](../GLDS-104_Processing_Scripts) directory into the respective subdirectories within the `GLDS-104/processing_scripts` directory you made in step 3.   
+   1. Download the scripts and associated input files found in [GLDS-104_Processing_Scripts](../GLDS-104_Processing_Scripts) into the respective subdirectories within the `GLDS-104/processing_scripts/` directory you made in step 3.   
 
-   2. Use a text editor such as [nano](https://www.nano-editor.org/) to change the paths indicated in each of the processing scripts you downloaded in step 5i to match the path to the top level (aka parent) directory you created in step 2.
+   2. Use a text editor such as [nano](https://www.nano-editor.org/) to change the `/path/to` indicated in each of the processing scripts you downloaded in step 5i to match the path you navigated to in step 1.
 
       > **Note1:** If your system uses the [slurm](https://slurm.schedmd.com/overview.html) job scheduler, you will also have to customize the #SBATCH options to be consistent with your system's slurm settings (consult your system administrator regarding the settings needed for your system).  
       >
