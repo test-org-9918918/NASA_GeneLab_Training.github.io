@@ -1,4 +1,5 @@
 ## Scripts used to generate the main set of raw QC data:
+**Note:** The scripts must be run in the order they are listed below:
 - [raw_fastqc.slurm](raw_fastqc.slurm)
 - [raw_multiqc.slurm](raw_multiqc.slurm)
 
