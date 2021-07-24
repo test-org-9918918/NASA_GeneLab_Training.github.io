@@ -17,13 +17,20 @@
   conda env create -f RNAseq_fq_to_counts_tools.yml
   ```
 
-  Activate the RNAseq_fq_to_counts_tools conda environment with the following command:
-  > This environment needs to be activated to run steps 1-6 of the [RNAseq processing pipeline](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/GL-DPPD-7101-C.md)
+  Check proper installation by activating the RNAseq_fq_to_counts_tools conda environment with the following command:
   
   ```
   conda activate RNAseq_fq_to_counts
   ``` 
-  Note: At least 45GB of RAM is required to run the tools in the RNAseq_fq_to_counts_tools conda environment.
+  
+  > Notes: 
+  > This environment is activated when running scripts to generate the following main set of processed data:
+  > - [raw QC data](../GLDS-104_Processing_Scripts/00-RawData)
+  > - [trimmed and respective QC data](../GLDS-104_Processing_Scripts/01-TG_PreProc)
+  > - [alignment and respective QC data](../GLDS-104_Processing_Scripts/02-STAR_Alignment)
+  > - [count data](../GLDS-104_Processing_Scripts/03-RSEM_Counts)
+  > - [DGE data](../GLDS-104_Processing_Scripts/04-05-DESeq2_NormCounts_DGE)
+  > At least 45GB of RAM is required to run the tools in the RNAseq_fq_to_counts_tools conda environment.
 
 <br>
 
