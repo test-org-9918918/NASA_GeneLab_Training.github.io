@@ -36,19 +36,19 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
   **4. Set up systemd**
   > To set up JupyterHub to run as a system service using systemd, which is responsible for managing all services that run at startup in Linux, create a service file in a suitable location in the `jupyterhub-env` environment folder then link it to the system services using the instructions below.
 
-    a) Create the folder for the service file by running the following command:
+   a) Create the folder for the service file by running the following command:
   
       ```
       mkdir -p /opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd
       ```
   
-    b) Use a text editor to create the following text file:
+   b) Use a text editor to create the following text file:
     
       ```
       /opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd/jupyterhub.service
       ```
     
-    c) Paste the following service unit definition into the file you created in 4.b):
+   c) Paste the following service unit definition into the file you created in 4.b):
       > Note: This sets up the environment to use the virtual environment created, tells systemd how to start JupyterHub using the configuration file created in step 2, specifies that JupyterHub will be started as the root user (needed so that it can start Jupyter on behalf of other logged in users), and specifies that JupyterHub should start on boot after the network is enabled.
   
       ```
@@ -66,13 +66,13 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
       WantedBy=multi-user.target
       ```
 
-    d) Use a text editor to create the following file that will be read during the systemd start script to set up the environment variables used by JupyterHub:
+   d) Use a text editor to create the following file that will be read during the systemd start script to set up the environment variables used by JupyterHub:
     
       ```
       /opt/intel/intelpython3/envs/jupyterhub-env/env-variables
       ```
       
-    e) Paste the following content into the file you created in 4.d):
+   e) Paste the following content into the file you created in 4.d):
     
       ```
       CONDA_DEFAULT_ENV=jupyterhub-env
@@ -88,31 +88,31 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
       RSTUDIO_WHICH_R=/opt/intel/intelpython3/envs/jupyterhub-env/bin/R
       ```
       
-    f) Make the systemd aware of the service file created in 4.b) by creating a symbolic link to the file in the systemd's directory by running the following command:
+   f) Make the systemd aware of the service file created in 4.b) by creating a symbolic link to the file in the systemd's directory by running the following command:
     
       ```
       ln -s /opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd/jupyterhub.service /etc/systemd/system/jupyterhub.service
       ```
       
-    g) Reload the systemd configuration files by running the following command:
+   g) Reload the systemd configuration files by running the following command:
     
       ```
       systemctl daemon-reload
       ```
       
-    h) Enable the JupyterHub service by running the following command:
+   h) Enable the JupyterHub service by running the following command:
     
       ```
       systemctl enable jupyterhub.service
       ```
       
-    i) The service will start on reboot, but it can be started without rebooting by running the following command:
+   i) The service will start on reboot, but it can be started without rebooting by running the following command:
     
       ```
       systemctl start jupyterhub.service
       ```
       
-    j) Check that the JupyterHub service is running by executing the following command:
+   j) Check that the JupyterHub service is running by executing the following command:
     
       ```
       systemctl status jupyterhub.service
