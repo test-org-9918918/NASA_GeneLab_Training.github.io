@@ -12,13 +12,13 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 > Note: All the commands in this section are run as a superuser user like root. You can also precede each command with sudo if your account has sudo rights.
 
-1. Create a conda environment named `jupyterhub-env` containing [JupyterHub](https://jupyter.org/hub), [JupyterLab](https://jupyter.org/), and [Jupyter Notebook](https://jupyter.org/) by running the following command:
+**1. Create a conda environment named `jupyterhub-env` containing [JupyterHub](https://jupyter.org/hub), [JupyterLab](https://jupyter.org/), and [Jupyter Notebook](https://jupyter.org/) by running the following command:**
 
 ```
 conda create -n jupyterhub-env -c conda-forge jupyterhub jupyterlab notebook
 ```
 
-2. Create the configuration file for JupyterHub by running the following commands:
+**2. Create the configuration file for JupyterHub by running the following commands:**
 
 ```
 mkdir -p /opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub/
@@ -27,11 +27,39 @@ cd /opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub/
 ```
 > Note: This will create the default configuration file in `/opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub`. If this is different in your system, change the paths in the above command to match your system environment.
 
-3. Edit the configuration file to make the JupyterLab interface by default by setting the following configuration option in the `jupyterhub_config.py` file:
+**3. Edit the configuration file to make the JupyterLab interface by default by setting the following configuration option in the `jupyterhub_config.py` file:**
 
 `c.Spawner.default_url = '/lab'`
 
-4. 
+**4. Set up systemd**
+> To set up JupyterHub to run as a system service using systemd, which is responsible for managing all services that run at startup in Linux, create a service file in a suitable location in the `jupyterhub-env` environment folder then link it to the system services using the instructions below.
+
+  a) Create the folder for the service file by running the following command:
+    ```
+    mkdir -p /opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd
+    ```
+  
+  b) Use a text editor to create the following text file:
+    `/opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd/jupyterhub.service`
+    
+  c) Paste the following service unit definition into the file you created in 4.b):
+    ```
+    [Unit]
+    Description=JupyterHub
+    After=syslog.target network.target
+
+    [Service]
+    User=root
+    #Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/intel/intelpython3/envs/jupyterhub-env/bin:/opt/intel/intelpython3/bin"
+    EnvironmentFile=/opt/intel/intelpython3/envs/jupyterhub-env/env-variables
+    ExecStart=/opt/intel/intelpython3/envs/jupyterhub-env/bin/jupyterhub -f /opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub/jupyterhub_config.py
+
+    [Install]
+    WantedBy=multi-user.target
+    ```
+
+   
+    
 
 
 
