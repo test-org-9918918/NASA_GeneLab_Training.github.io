@@ -12,5 +12,28 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 > Note: All the commands in this section are run as a superuser user like root. You can also precede each command with sudo if your account has sudo rights.
 
+1. Create a conda environment named `jupyterhub-env` containing [JupyterHub](https://jupyter.org/hub), [JupyterLab](https://jupyter.org/), and [Jupyter Notebook](https://jupyter.org/) by running the following command:
+
+```
+conda create -n jupyterhub-env -c conda-forge jupyterhub jupyterlab notebook
+```
+
+2. Create the configuration file for JupyterHub by running the following commands:
+
+```
+mkdir -p /opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub/
+cd /opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub/
+/opt/intel/intelpython3/envs/jupyterhub-env/bin/jupyterhub --generate-config
+```
+> Note: This will create the default configuration file in `/opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub`. If this is different in your system, change the paths in the above command to match your system environment.
+
+3. Edit the configuration file to make the JupyterLab interface by default by setting the following configuration option in the `jupyterhub_config.py` file:
+
+`c.Spawner.default_url = '/lab'`
+
+4. 
+
+
+
 
 
