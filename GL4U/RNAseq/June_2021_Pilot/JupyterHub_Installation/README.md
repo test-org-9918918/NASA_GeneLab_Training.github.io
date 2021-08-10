@@ -1,3 +1,3 @@
 # Instructions for Setting Up the JupyterHub
 
-Coming soon
+The GL4U: June 2021 RNAseq Bootcamp was designed to run using a series of Jupyter Notebooks (JNs) that call tools for processing RNA sequence data using the [GeneLab RNA-seq consensus pipeline](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8044432/). To allow all bootcamp participants to run the JNs within the same environment, San Jose State University's (SJSU) system administrator, Steven Boring, set up a JupyterHub on the SJSU cluster, which runs the Red Hat Enterprise Linux (RHEL) CentOS operating system using the steps described within this directory.  
