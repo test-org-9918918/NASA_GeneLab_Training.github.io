@@ -14,7 +14,7 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 > Note: All the commands in this section are run as a superuser user like root. You can also precede each command with sudo if your account has sudo rights.
 
-  **1. Create a conda environment named `jupyterhub-env` containing [JupyterHub](https://jupyter.org/hub), [JupyterLab](https://jupyter.org/), and [Jupyter Notebook](https://jupyter.org/) by running the following command:**
+  **1. Create a conda environment named** `jupyterhub-env` **containing [JupyterHub](https://jupyter.org/hub), [JupyterLab](https://jupyter.org/), and [Jupyter Notebook](https://jupyter.org/) by running the following command:**
 
   ```
   conda create -n jupyterhub-env -c conda-forge jupyterhub jupyterlab notebook
@@ -30,7 +30,7 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
   /opt/intel/intelpython3/envs/jupyterhub-env/bin/jupyterhub --generate-config
   ```
 
-  **3. Edit the configuration file to make the JupyterLab interface by default by setting the following configuration option in the `jupyterhub_config.py` file:**
+  **3. Edit the configuration file to make the JupyterLab interface by default by setting the following configuration option in the** `jupyterhub_config.py` **file:**
 
   ```
   c.Spawner.default_url = '/lab'
@@ -140,15 +140,15 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 > Note: At this point the JupyterHub service will use `127.0.0.1:8000`. To make use of a cleaner url like `server_url/jupyter/`, set up a reverse proxy using the instrucitons below.
 
- **1. Configure JupyterHub to use the reverse proxy by modifying the `jupyterhub_config.py` file in `/opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub` as follows:**
+ **1. Configure JupyterHub to use the reverse proxy by modifying the** `jupyterhub_config.py` **file in** `/opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub` **as follows:**
  
    Change the `c.JupyterHub.bind_url` clause to `c.JupyterHub.bind_url = 'http://:8000/jupyter'`
  
- **2. Use a text editor to create a `jupyterhub.conf` file in the `/etc/httpd/conf.d` directory.**
+ **2. Use a text editor to create a** `jupyterhub.conf` **file in the** `/etc/httpd/conf.d` **directory.**
  
  > Note: If httpd (apache) is not the web server used, create this file in the directory that corresponds to the web server used for your system. 
  
- **3. Add the following text to the `jupyterhub.conf` file created in step 2:**
+ **3. Add the following text to the** `jupyterhub.conf` **file created in step 2:**
  
   ```
   # SAMPLE CONFIG SNIPPETS FOR APACHE WEB SERVER
