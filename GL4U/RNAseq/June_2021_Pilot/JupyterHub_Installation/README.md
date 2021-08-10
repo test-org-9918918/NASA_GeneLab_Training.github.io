@@ -10,7 +10,7 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 <br>
 
-### Part I: Create the JupyterHub environment, install, and configure JupyterHub
+## Part I: Create the JupyterHub environment, install, and configure JupyterHub
 
 > Note: All the commands in this section are run as a superuser user like root. You can also precede each command with sudo if your account has sudo rights.
 
@@ -136,7 +136,7 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
       
 <br>
 
-### Part II: Configuring the reverse proxy
+## Part II: Configuring the reverse proxy
 
 > Note: At this point the JupyterHub service will use `127.0.0.1:8000`. To make use of a cleaner url like `server_url/jupyter/`, set up a reverse proxy using the instrucitons below.
 
@@ -179,7 +179,9 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
   systemctl restart httpd.service
   ```
 
-    
+<br>
+
+## Part III: Install Kernels in JupyterHub
 
 
 
