@@ -20,7 +20,14 @@ Throughout the bootcamp, instruction transitioned between lectures and hands-on 
 
 ---
 ## Required Resources
-The following compute resources are required to generate the main set of GLDS-104 processed RNAseq data as detailed in this directory:
+The following compute resources are required to set up and run this bootcamp for up to 35 users (including instructors and TAs).
+
+### Head Node
+- Used for running the [JupyterHub](JupyterHub_Installation)
+- All users will login to the JupyterHub (and thus the head node) via a web browser
+- Required specs:
+-   At least 16 cores (32 CPUs)
+-   At least 65 GB RAM
 - XXGB RAM
 - XX CPUs
 - XXGB storage space
