@@ -26,8 +26,11 @@ The following compute resources are required to set up and run this bootcamp for
 - Used for running the [JupyterHub](JupyterHub_Installation)
 - All users will login to the JupyterHub (and thus the head node) via a web browser
 - Required specs:
--   At least 16 cores (32 CPUs)
--   At least 65 GB RAM
-- XXGB RAM
+  -  At least 16 cores (32 CPUs)
+  -  At least 65 GB RAM
+
+### Compute Nodes
+- Used for creating the main set of processed data
+
 - XX CPUs
 - XXGB storage space
