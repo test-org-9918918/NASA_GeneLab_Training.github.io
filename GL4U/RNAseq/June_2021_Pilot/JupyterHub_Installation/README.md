@@ -8,6 +8,8 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 > The SJSU HPC has the [Intel Distribution for Python](https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/distribution-for-python.html#gs.8nrglu) installed, which is an [Anaconda](https://www.anaconda.com/) base Python distribution so conda commands can be used to create conda environments and install Python packages. On the SJSU HPC, the Intel Distribution for Python is installed in `/opt/intel/intelpython3/` so the environment created below will be saved in `/opt/intel/intelpython3/envs`. Be sure to change the paths in the instructions below to match your system environment.
 
+<br>
+
 ### Part I: Create the JupyterHub environment, install, and configure JupyterHub
 
 > Note: All the commands in this section are run as a superuser user like root. You can also precede each command with sudo if your account has sudo rights.
@@ -136,7 +138,47 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
 ### Part II: Configuring the reverse proxy
 
-   
+> Note: At this point the JupyterHub service will use `127.0.0.1:8000`. To make use of a cleaner url like `server_url/jupyter/`, set up a reverse proxy using the instrucitons below.
+
+ **1. Configure JupyterHub to use the reverse proxy by modifying the `jupyterhub_config.py` file in `/opt/intel/intelpython3/envs/jupyterhub-env/etc/jupyterhub` as follows:**
+ 
+   Change the `c.JupyterHub.bind_url` clause to `c.JupyterHub.bind_url = 'http://:8000/jupyter'`
+ 
+ **2. Use a text editor to create a `jupyterhub.conf` file in the `/etc/httpd/conf.d` directory.**
+ 
+ > Note: If httpd (apache) is not the web server used, create this file in the directory that corresponds to the web server used for your system. 
+ 
+ **3. Add the following text to the `jupyterhub.conf` file created in step 2:**
+ 
+  ```
+  # SAMPLE CONFIG SNIPPETS FOR APACHE WEB SERVER
+  #
+  # This file contains examples of entries that need
+  # to be incorporated into your Apache web server
+  # configuration file.  Customize the paths, etc. as
+  # needed to fit your system.
+  
+  <VirtualHost *:80>
+      ProxyPreserveHost On
+  
+      RewriteEngine On
+      RewriteCond %{HTTP:Connection} Upgrade [NC]
+      RewriteCond %{HTTP:Upgrade} websocket [NC]
+  
+      RewriteRule /jupyter/(.*) ws://127.0.0.1:8000/jupyter/$1 [NE,P,L]
+      RewriteRule /jupyter/(.*) http://127.0.0.1:8000/jupyter/$1 [NE,P,L]
+  
+      ProxyPass /jupyter/ http://127.0.0.1:8000/jupyter/
+      ProxyPassReverse /jupyter/ http://127.0.0.1:8000/jupyter/
+  </VirtualHost>
+  ```
+ 
+ **4. Restart the httpd service by running the following command:**
+ 
+  ```
+  systemctl restart httpd.service
+  ```
+
     
 
 
