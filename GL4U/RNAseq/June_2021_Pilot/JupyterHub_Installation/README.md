@@ -38,9 +38,9 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
 
    a) Create the folder for the service file by running the following command:
   
-      ```
-      mkdir -p /opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd
-      ```
+   ```
+   mkdir -p /opt/intel/intelpython3/envs/jupyterhub-env/etc/systemd
+   ```
   
    b) Use a text editor to create the following text file:
     
@@ -49,6 +49,7 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
       ```
     
    c) Paste the following service unit definition into the file you created in 4.b):
+   
       > Note: This sets up the environment to use the virtual environment created, tells systemd how to start JupyterHub using the configuration file created in step 2, specifies that JupyterHub will be started as the root user (needed so that it can start Jupyter on behalf of other logged in users), and specifies that JupyterHub should start on boot after the network is enabled.
   
       ```
