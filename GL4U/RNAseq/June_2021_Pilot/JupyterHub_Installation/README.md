@@ -215,7 +215,7 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
    /opt/conda/envs/python/bin/python -m ipykernel install --prefix /usr/local/ --name 'python' --display-name "Python (default)"
    ```
 
- **4. Install the R kernel spec via [CRAN](https://cran.r-project.org/) by running the following commands:
+ **4. Install the R kernel spec via [CRAN](https://cran.r-project.org/) by running the following commands:**
  
    ```
    conda activate jupyterhub-env # activate the `jupyterhub-env` conda environemnt
