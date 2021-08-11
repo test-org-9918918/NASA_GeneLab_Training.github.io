@@ -179,26 +179,41 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
   systemctl restart httpd.service
   ```
 
-**You should now be able to browse to the JupyterHub server via <http://server_url/jupyter/> which should direct you to the JupyterHub login page. Once logged in, you will be taken to the JupyterLab interface.**
+**You should now be able to browse to the JupyterHub server via < http://server_url/jupyter/ > which should direct you to the JupyterHub login page. Once logged in, you will be taken to the JupyterLab interface.**
 
 <br>
 
 ## Part III: Install RNAseq Tools and Kernels in JupyterHub
 
- **1. Add packages required to run the [RNAseq fastq to counts JN](../RNAseq_fastq_to_counts_JN) by executing the following command:
+ **1. Add packages required to run the [RNAseq fastq to counts JN](../RNAseq_fastq_to_counts_JN) by executing the following command:**
  
   ```
   conda env update -n jupyterhub-env -f JupyterHub_fq_to_counts_tools.yml
   ```
  
- **2. Add packages required to run the [RNAseq DGE JN](../RNAseq_DGE_JN) by executing the following command:
+ **2. Add packages required to run the [RNAseq DGE JN](../RNAseq_DGE_JN) by executing the following command:**
  
   ```
   conda env update -n jupyterhub-env -f JupyterHub_R_tools.yml
   ```
  
+ **3. Make the `jupyterhub-env` conda environment visible to Jupyter by installing the Python kernel spec using either option a) or b) below:**
  
+   a) Install the Python kernel spec into the JupyterHub virtual environment (`jupyterhub-env`) by running the following command:
+   
+   > Note: This ensures the spec overrides the default Python version and will only be visible to the JupyterHub installation created using the instructions detailed here. This is useful to avoid conda environments appearing where they are not expected.
+  
+   ```
+   /opt/intel/intelpython3/envs/jupyterhub-env/bin/python -m ipykernel install --prefix=/opt/intel/intelpython3/envs/jupyterhub-env --name 'python-jupyterhub' --display-name "Python JupyterHub"
+   ```
 
+   b) Install the Python kernel spec system-wide by putting it into `/usr/local` by running the following command:
+    
+   > Note: This allows the spec to be visible to any parallel install of JupyterHub or JupyterLab and will persist even if you later delete or modify the JupyterHub installation. This is useful if the kernels might be used by other services, or if you want to modify the JupyterHub installation independently from the conda environments.
+  
+   ```
+   /opt/conda/envs/python/bin/python -m ipykernel install --prefix /usr/local/ --name 'python' --display-name "Python (default)"
+   ```
 
 
 
