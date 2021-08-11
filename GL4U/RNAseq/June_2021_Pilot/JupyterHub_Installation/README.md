@@ -179,9 +179,25 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
   systemctl restart httpd.service
   ```
 
+**You should now be able to browse to the JupyterHub server via <http://server_url/jupyter/> which should direct you to the JupyterHub login page. Once logged in, you will be taken to the JupyterLab interface.**
+
 <br>
 
-## Part III: Install Kernels in JupyterHub
+## Part III: Install RNAseq Tools and Kernels in JupyterHub
+
+ **1. Add packages required to run the [RNAseq fastq to counts JN](../RNAseq_fastq_to_counts_JN) by executing the following command:
+ 
+  ```
+  conda env update -n jupyterhub-env -f JupyterHub_fq_to_counts_tools.yml
+  ```
+ 
+ **2. Add packages required to run the [RNAseq DGE JN](../RNAseq_DGE_JN) by executing the following command:
+ 
+  ```
+  conda env update -n jupyterhub-env -f JupyterHub_R_tools.yml
+  ```
+ 
+ 
 
 
 
