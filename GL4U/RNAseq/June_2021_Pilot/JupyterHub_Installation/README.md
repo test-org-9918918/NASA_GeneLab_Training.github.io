@@ -215,6 +215,13 @@ The following instructions were modified from the [Install JupyterHub and Jupyte
    /opt/conda/envs/python/bin/python -m ipykernel install --prefix /usr/local/ --name 'python' --display-name "Python (default)"
    ```
 
-
-
+ **4. Install the R kernel spec via [CRAN](https://cran.r-project.org/) by running the following commands:
+ 
+   ```
+   conda activate jupyterhub-env # activate the `jupyterhub-env` conda environemnt
+   install.packages('IRkernel')
+   IRkernel::installspec(user=false)  # to register the kernel in the current R installation
+   ```
+   
+  > Note: By default `IRkernel::installspec()` will install a kernel with the name “ir” and a display name of “R” and will only install the kernel per-user. The `user=false` option will install the kernel system-wide.
 
