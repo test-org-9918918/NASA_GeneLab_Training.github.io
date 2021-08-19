@@ -28,6 +28,8 @@ For any questions, comments, and/or issues please [contact GeneLab](https://gene
 ---
 ### Disclaimers
 
+**This repository contains training content and documentation for how to use previously released open source software. It does not constitute a new open source release.**
+
 No Warranty: THE SUBJECT SOFTWARE IS PROVIDED "AS IS" WITHOUT ANY
 WARRANTY OF ANY KIND, EITHER EXPRESSED, IMPLIED, OR STATUTORY,
 INCLUDING, BUT NOT LIMITED TO, ANY WARRANTY THAT THE SUBJECT SOFTWARE
