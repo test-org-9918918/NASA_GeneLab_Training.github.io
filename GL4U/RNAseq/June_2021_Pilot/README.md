@@ -44,3 +44,11 @@ The following compute resources are required to set up and run this bootcamp for
   - 50 GB per participant X 35 participants per bootcamp = 1.75 TB
 - Total storage needed:
   - 3 TB (250 GB of additional storage is added for temporary files generated during processing)
+
+---
+### Content Contributors
+The following people have developed the content and instructions for running this bootcamp:
+- Amanda Saravia-Butler (GeneLab Data Processing)
+- Lauren Sanders (GeneLab Data Processing)
+- Philip Heller (San Jose State University, Assistant Professor)
+- Steven Boring (San Jose State University, System Administrator)
