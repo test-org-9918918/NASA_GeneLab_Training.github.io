@@ -4,7 +4,7 @@
 
 |Time (PDT)|Activity|Video Recording|
 |:---------|:-------|:--------------|
-|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|[Day1 Part 1 (of 5)]()|
+|9am - 955am|Welcome / Start Intro to NASA and GeneLab (lecture)|[Day1 Part 1 (of 5)](temp.md)|
 |955am - 10am|BREAK|N/A|
 |10am - 1115am|NASA Guest Lectures (Winnie Kuang and Kristen Kallstrom) – UAM and ROMAX projects|N/A|
 |1115am - 1130am|BREAK|N/A|
