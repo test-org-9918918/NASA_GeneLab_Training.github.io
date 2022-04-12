@@ -219,13 +219,14 @@
 	> 5.95
 
 3.	What are those values for the third gene listed?
-	> ENSMUSG00000000028: 1863.69; 91.00; 1.15
+	> ENSMUSG00000000028: 1863.71; 91.00; 1.15
+
 
 
 **Look at the FLT_Rep1.isoforms.results file above and answer the following questions:**
 
 1.	Calculate the sum of the expected count values for all isoforms associated with this gene: ENSMUSG00000000028.
-	> 74.70 + 10.19 + 6.11 + 0.00 = 91.00
+	> 74.69 + 10.20 + 6.11 + 0.00 = 91.00
 
 2.	How does that value compare with the expected count for gene ENSMUSG00000000028 in the FLT_Rep1.genes.results file?
 	> It’s the same.
@@ -233,16 +234,20 @@
 ---
 ### Section 8b. Compile Count Data with MultiQC
 
-**Take a look at the multiQC report of the strandedness data above and answer the following questions:**
+**Take a look at the multiQC report of the RSEM \*.cnt data above and answer the following questions:**
 
-1.	Are the data for all samples stranded or unstranded?
-	> Stranded
+1.	Which sample has the highest % alignable reads? Which sample has the lowest?
+	> Highest: GC_Rep2 (90.5%) 
+	> 
+	> Lowest: GC_Rep6 (87.0%)
 
-2.	If stranded, what is the orientitation of the reads relative to the reference?
-	> Antisense
+2.	Which sample has the highest % of unalignable reads? Which sample has the lowest?
+	> Highest: GC_Rep6 (13.0%) 
+	> 
+	> Lowest: GC_Rep2 (9.5%)
 
 ---
-## Section 7. Generate Raw Counts Table
+## Section 9. Generate Raw Counts Table
 
 **Look at the beginning of the Unnormalized Counts table above and answer the following questions:**
 1.	How many genes are shown?
