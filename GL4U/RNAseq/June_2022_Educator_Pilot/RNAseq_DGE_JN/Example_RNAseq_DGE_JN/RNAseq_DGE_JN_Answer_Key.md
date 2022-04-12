@@ -26,15 +26,15 @@
 
 **Based on the summary(dds) outputs before and after filtering, answer the following questions:**
 1.	How many genes had a count sum of less than 10 across all samples?
-	> 55487 - 21862 = 33625
+	> 55487 - 21880 = 33607
 
 2.	How many genes are stored in the DESeqDataSet object now?
-	> 21862
+	> 21880
 
 **Challenge: Use the next few code blocks to see what happens to the number of genes stored in the DESeqDataSet object if you filter out genes with a count sum less than 20 across all samples? What about less than 50?**
-> less than 20: 20046
+> less than 20: 20061
 > 
-> less than 50: 17653
+> less than 50: 17658
 
 ---
 ## Section 2. DESeq2 Data Normalization
