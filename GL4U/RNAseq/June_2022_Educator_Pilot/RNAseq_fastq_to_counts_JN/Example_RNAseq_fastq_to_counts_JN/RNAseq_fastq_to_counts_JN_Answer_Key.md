@@ -171,18 +171,36 @@
 	> Max: 13.0% (tie: GC_Rep3 and GC_Rep4)
 
 ---
-## Section 6. Count Aligned Reads with RSEM
+### Section 6a. Evaluate Strandedness with RSeQC Infer Experiment
 
-**You probably saw many lines with messages like this: Warning: Read J00113:162:H7W32BBXX:1:2205:32065:27443 is ignored due to at least one of the mates' length < seed length (= 25)! What does this warning mean? (Hint: take a look at the RSEM user guide linked above.) Should we be concerned about this warning?**
-> It means that the read will be ignored in the counting process because the read itself or its mate had a length less that the seed length of 25 (set by default).
-> 
-> From the RSEM user guide:
-> 
-> --seed-length <int>
->
-> Seed length used by the read aligner. Providing the correct value is important for RSEM. If RSEM runs Bowtie, it uses this value for Bowtie's seed length parameter. Any read with its or at least one of its mates' (for paired-end reads) length less than this value will be ignored. If the references are not added poly(A) tails, the minimum allowed value is 5, otherwise, the minimum allowed value is 25. Note that this script will only check if the value >= 5 and give a warning message if the value < 25 but >= 5. (Default: 25)
-> 
-> No, we don’t need to be concerned.
+**Look at the \*infer_exp.out file above and answer the following questions:**
+
+1.	What percent of reads have undetermined strandedness?
+	> 13.44%
+
+2.	What percent of reads are sense relative to the reference?
+	> 0.76%
+
+3.	What percent of reads are antisense relative to the reference?
+	> 85.79%
+
+4.	Are these data stranded?
+	> Yes
+
+---
+### Section 6b. Compile Strandedness Data with MultiQC
+
+**Take a look at the multiQC report of the strandedness data above and answer the following questions:**
+
+1.	Are the data for all samples stranded or unstranded?
+	> Stranded
+
+2.	If stranded, what is the orientitation of the reads relative to the reference?
+	> Antisense
+
+---
+
+### Section 8a. Count Aligned Reads with RSEM
 
 **Now that you know what the fields mean, look at the FLT_Rep1.genes.results file above and answer the following questions:** 
 
@@ -211,6 +229,17 @@
 
 2.	How does that value compare with the expected count for gene ENSMUSG00000000028 in the FLT_Rep1.genes.results file?
 	> It’s the same.
+
+---
+### Section 8b. Compile Count Data with MultiQC
+
+**Take a look at the multiQC report of the strandedness data above and answer the following questions:**
+
+1.	Are the data for all samples stranded or unstranded?
+	> Stranded
+
+2.	If stranded, what is the orientitation of the reads relative to the reference?
+	> Antisense
 
 ---
 ## Section 7. Generate Raw Counts Table
