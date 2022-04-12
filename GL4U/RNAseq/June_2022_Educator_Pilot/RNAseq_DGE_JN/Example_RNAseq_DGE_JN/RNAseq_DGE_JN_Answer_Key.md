@@ -57,9 +57,9 @@
 	> 12
 
 2.	What percent of the variance is explained by PC1? PC2? (Hint: See Proportion of Variance)
-	> PC1: 18.2%
+	> PC1: 18.16%
 	>
-	> PC2: 13.6%
+	> PC2: 13.59%
 
 3.	How are the PCs ranked?
 	> By Standard deviation and proportion of variance, decreasing and Cumulative Proportion increasing
