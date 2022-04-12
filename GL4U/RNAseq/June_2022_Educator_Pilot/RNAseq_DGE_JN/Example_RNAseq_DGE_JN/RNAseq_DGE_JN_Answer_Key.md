@@ -169,7 +169,7 @@
 	> Because we are performing multiple comparisons (over 20k genes, aka variables)
 
 2.	How many significant DEGs are there? (Hint: Look at the dimensions of the matrix (reported in rows by columns, or genes by samples)
-	> 768
+	> 773
 
 3.	Based on the adjusted p-value cutoff used, how confident are we (in %) that those genes are DE?
 	> 95%
@@ -177,7 +177,7 @@
 ---
 ### Section 4a. PCA
 
-**Compare this PCA plot to the plot we made in Step 2b using all normalized counts, and answer the following questions:**
+**Compare this PCA plot to the plot we made in Step 2d using all normalized counts, and answer the following questions:**
 1.	How has the percent of variance explained by PC1 changed? What is responsible for this change?
 	> Increased 
 	>
