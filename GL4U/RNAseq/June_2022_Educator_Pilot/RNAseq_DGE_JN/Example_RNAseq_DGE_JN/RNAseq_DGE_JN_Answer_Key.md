@@ -88,7 +88,7 @@
 
 **Answer the following questions:**
 1.	Is the Wald Test the only type of hypothesis testing method we could have used here? (Hint: see the "Likelihood ratio test" section here: http://bioconductor.org/packages/devel/bioc/vignettes/DESeq2/inst/doc/DESeq2.html)
-	> No, we could have used the Likelihood Ration Test (LRT)
+	> No, we could have used the Likelihood Ratio Test (LRT)
 
 2.	Why did we choose the Wald Test?
 	> Because we only had 2 comparisons
@@ -119,19 +119,19 @@
 
 **Looking at the DGE output table now, answer the following questions:**
 1.	How many columns have been added?
-	> 2
+	> 10
 
 2.	What is the average expression of gene, ENSMUSG00000000031 across all samples?
-	> 94204.228135
+	> 94207.691581
 
 **Use the code block below to look at the DGE output table now and answer the following questions:** 
 1.	How many columns have been added?
 	> 4
 
 2.	What is the average expression of gene, ENSMUSG00000000031 in the FLT group? In the GC group?
-	> FLT: 76499.93
+	> FLT: 76503.95
 	>
-	> GC: 111908.53
+	> GC: 111911.44
 
 ---
 ### Section 3b. Add Gene Annotations
@@ -159,7 +159,7 @@
 	> guanine nucleotide binding protein (G protein), alpha inhibiting 3
 
 2.	How many biological functions involve Gnai3? (Hint: Look at the GOSLIM IDs)
-	> 67
+	> 55
 
 ---
 ## Section 4. DGE Data Visualization
