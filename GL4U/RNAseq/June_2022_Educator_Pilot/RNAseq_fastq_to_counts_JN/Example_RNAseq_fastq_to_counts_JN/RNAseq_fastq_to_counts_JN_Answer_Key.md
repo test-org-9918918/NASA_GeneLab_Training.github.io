@@ -142,18 +142,18 @@
 **Use the alignment log file above to answer the following questions:**
 
 1.	How many reads mapped to a unique location on the reference genome?
-	> 52,768,612 (77.23%)
+	> 52,772,596 (77.24%)
 
 2.	How many reads mapped to multiple locations on the reference genome?
-	> 8,043,149 (11.77%)
+	> 8,054,902 (11.79%)
 
 3.	Were any splice regions identified? If so, how many in total?
-	> Yes, 38,545,460
+	> Yes, 38,550,564
 
 4.	How many of the spliced regions were annotated? How many were non-canonical?
-	> Annotated: 38,545,209
+	> Annotated: 38,550,311
 	>
-	> Non-canonical: 14,146
+	> Non-canonical: 14,147
 
 ---
 ### Section 4b. Compile Alignment Log Files with MultiQC
