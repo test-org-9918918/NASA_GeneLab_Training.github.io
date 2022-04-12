@@ -57,7 +57,7 @@
 7.	After filtering base pairs for quality, what percent of base pairs were removed from the forward reads? What about the reverse reads?
 	> Forward: 0.4% of bp (98.6% of bp were written / passed filter)
 	>
-	> Reverse: 0.3% of bp (98.4% of bp were written / passed filter)
+	> Reverse: 0.6% of bp (98.4% of bp were written / passed filter)
 
 8.	Did the raw forward or raw reverse reads have better quality? How do you know?
 	> Forward - fewer base pairs were removed due to adapter contamination and/or poor quality (note: read quality can also be determined by the multiqc report of the raw fastqc data)
