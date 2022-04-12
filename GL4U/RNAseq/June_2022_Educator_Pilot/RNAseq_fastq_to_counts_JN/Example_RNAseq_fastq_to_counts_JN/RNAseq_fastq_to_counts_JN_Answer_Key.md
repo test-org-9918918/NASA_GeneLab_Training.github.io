@@ -105,7 +105,7 @@
 	> Yes, the standard output says so: “finished successfully”
 
 2.	How long did it take for the STAR alignment to complete?
-	> 16.88 hours (note: this is with only running on 1 CPU, but changing the #SBATCH --ntasks option to 4 allows the job to run across 4 CPUs, which speeds this step up to ~4-5 hours per sample)  
+	> 1.96 hours   
 
 **Now that you know what the fields mean, look at the BAM file above and answer the following questions:**
 
