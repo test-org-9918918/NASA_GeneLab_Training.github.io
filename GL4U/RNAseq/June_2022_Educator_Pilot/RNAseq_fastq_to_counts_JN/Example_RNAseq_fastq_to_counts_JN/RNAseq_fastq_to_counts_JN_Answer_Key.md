@@ -127,7 +127,7 @@
 	>
 	> Note the same set of sequences (mate pairs) for the first two transcripts and the same set of sequences (mate pairs) for the last three transcripts.
 
-3.	How many reads align in the same orientation relative to the reference? What about in the opposite orientation? How to you know?
+3.	How many reads align in the same orientation relative to the reference? What about in the opposite orientation? How do you know?
 	> 5 reads align in the same orientation relative to the reference (positive TLEN value).
 	>
 	> 5 reads align in the opposite orientation relative to the reference (negative TLEN value).
