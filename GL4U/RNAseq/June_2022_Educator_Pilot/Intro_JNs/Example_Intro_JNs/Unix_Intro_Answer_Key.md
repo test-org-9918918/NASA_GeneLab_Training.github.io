@@ -1,13 +1,13 @@
-# Unix_Intro_JN_06-2021.ipynb Challange Question Answer Key:
+# Unix_Intro_JN_06-2022.ipynb Question Answer Key:
 
 ---
 ### Section 1b.
 
+**What time zone is this compute system set to?**
+> UTC
+
 **How many lines does the head command print by default?**
 > 10
-
-**What happened when you tried executing head -h?**
-> We get an “invalid option” error
 
 **Is -h a valid option for the head command? How do you know?** 
 > No because it gave an error
@@ -21,7 +21,7 @@
 ---
 ### Section 2a.
 
-**Where are you located within the SJSU cluster?** 
+**Where are you located within the cluster?** 
 > /home/username
 
 **Did you notice any familiar files?** 
