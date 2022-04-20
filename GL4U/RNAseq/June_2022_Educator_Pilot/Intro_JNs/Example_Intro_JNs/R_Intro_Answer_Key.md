@@ -1,4 +1,4 @@
-# R_Intro_JN_06-2021.ipynb Challange Question Answer Key:
+# R_Intro_JN_06-2022.ipynb Challange Question Answer Key:
 
 ---
 ## Section 0.
@@ -9,7 +9,7 @@
 ---
 ### Section 1b.
 
-**Where are you located within the SJSU cluster?**
+**Where are you located within the cluster?**
 > /home/[username]
 
 ---
