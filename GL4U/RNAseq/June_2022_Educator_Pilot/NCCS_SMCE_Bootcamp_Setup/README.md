@@ -1,0 +1,54 @@
+# Instructions For Setting Up the Bootcamp On the NASA NCCS SMCE System 
+
+The Pilot GL4U: Educator RNAseq Bootcamp was designed to teach college-level educators how to process RNAseq data with [version D]() of the [GeneLab RNA-seq consensus pipeline](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8044432/) using a series of Jupyter Notebooks (JNs). To allow all bootcamp participants to run the JNs within the same environment, the [NASA Center for Climate Simulation, NCCS](https://www.nccs.nasa.gov/) [Science Managed Could Environment, SMCE](https://www.nccs.nasa.gov/systems/SMCE) team set up a [JupyterHub](https://jupyter.org/hub) on their system. The GeneLab team equiped the JupyterHub environment with all the content needed for educators to teach the bootcamp content at their home institutions. For educators who successfully completed the Pilot GL4U: Educator RNAseq Bootcamp, follow the instructions below to request up to XX weeks of access for you teach the bootcamp material to your students.     
+
+## Request Access To the NCCS SMCE GL4U JupyterHub
+
+Insert instrcutions for how Educators can request access and set up accounts for themselves and their students
+
+Information needed from all users to set up accounts:
+> Full name
+> E-mail address
+> Phone number
+> Citizenship
+
+## Getting Started
+
+Once accounts have been set up for the educator(s) and all students, follow the instructions below to get started:
+
+1. Go to [https://daskhub.gl4u.mysmce.com/](https://daskhub.gl4u.mysmce.com/) and type in your username and password. You will receive a text message with a code to fill in on the next screen.
+
+2. You will then be prompted to select a server. Select the "Small Server" from the option list and click "Start" as shown below:
+
+<img src="images/server_options.png" align="center" alt=""/>
+
+3. Once your server is up, under the "Other" section, click on the "Terminal" icon as indicated in the image below.
+
+<img src="images/launcher_options.png" align="center" alt=""/>
+
+4. In the terminal window, run the following command to copy all the files needed to run the bootcamp to your `/home` directory:
+
+`/efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/copy_JN_files.sh`
+
+5. You should now see the following files added to your `/home` directory, listed on the left side of your screen:
+   RNAseq_DGE_JN_06-2022.ipynb
+   RNAseq_fastq_to_counts_JN_06-2022.ipynb
+   R_Intro_JN_06-2022.ipynb
+   Saturn.txt
+   Unix_Intro_JN_06-2022.ipynb
+   example.csv
+   example.txt
+
+6. Double click on the "Unix_Intro_JN_06-2022.ipynb" in the left panel to open the first JN in the hands-on portion of the bootcamp as shown in the image below:
+
+<img src="images/JN_files.png" align="center" alt=""/> 
+
+7. You are now ready to run the hands-on portion of the bootcamp. A few things to note about the specific JNs to make sure everything runs smoothly:
+   * When running the "Unix_Intro_JN_06-2022.ipynb" and "RNAseq_fastq_to_counts_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "Python [conda env:gl4u]". If it is not, click on the kernel shown, and select "Python [conda env:gl4u]" from the drop-down menu as indicated in the image below.
+
+<img src="images/python_kernel.png" align="center" alt=""/>
+
+   * When running the "R_Intro_JN_06-2022.ipynb" and "RNAseq_DGE_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "R [conda env:gl4u-r]". If it is not, click on the kernel shown, and select "R [conda env:gl4u-r]" from the drop-down menu as indicated in the image below.
+
+<img src="images/R_kernel.png" align="center" alt=""/>
+
