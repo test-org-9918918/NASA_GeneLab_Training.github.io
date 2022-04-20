@@ -1,4 +1,4 @@
-# RNAseq_fastq_to_counts_JN_06-2021.ipynb Challange Question Answer Key:
+# RNAseq_fastq_to_counts_JN_06-2022.ipynb Challange Question Answer Key:
 
 ---
 ### Section 1a&b. Raw Data QC with FastQC - Compiled with MultiQC
