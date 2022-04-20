@@ -12,6 +12,7 @@ Information needed from all users to set up accounts:
 > Phone number  
 > Citizenship  
 
+---
 ## Getting Started
 
 Once accounts have been set up for the educator(s) and all students, follow the instructions below to get started:
@@ -51,4 +52,32 @@ Once accounts have been set up for the educator(s) and all students, follow the 
    * When running the "R_Intro_JN_06-2022.ipynb" and "RNAseq_DGE_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "R [conda env:gl4u-r]". If it is not, click on the kernel shown, and select "R [conda env:gl4u-r]" from the drop-down menu as indicated in the image below.
 
 <img src="images/R_kernel.png" align="center" alt=""/>
+
+---
+## The follow software is used in this bootcamp:
+
+|Program|Version|Relevant Links|
+|:------|:------:|:-------------|
+|FastQC|0.11.9|[https://www.bioinformatics.babraham.ac.uk/projects/fastqc/](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)|
+|MultiQC|1.12|[https://multiqc.info/](https://multiqc.info/)|
+|Cutadapt|3.7|[https://cutadapt.readthedocs.io/en/stable/](https://cutadapt.readthedocs.io/en/stable/)|
+|TrimGalore!|0.6.7|[https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/](https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/)|
+|STAR|2.7.10a|[https://github.com/alexdobin/STAR](https://github.com/alexdobin/STAR)|
+|RSEM|1.3.1|[https://github.com/deweylab/RSEM](https://github.com/deweylab/RSEM)|
+|Samtools|1.15|[http://www.htslib.org/](http://www.htslib.org/)|
+|gtfToGenePred|377|[http://hgdownload.cse.ucsc.edu/admin/exe/](http://hgdownload.cse.ucsc.edu/admin/exe/)|
+|genePredToBed|377|[http://hgdownload.cse.ucsc.edu/admin/exe/](http://hgdownload.cse.ucsc.edu/admin/exe/)|
+|infer_experiment|4.0.0|[http://rseqc.sourceforge.net/#infer-experiment-py](http://rseqc.sourceforge.net/#infer-experiment-py)|
+|geneBody_coverage|4.0.0|[http://rseqc.sourceforge.net/#genebody-coverage-py](http://rseqc.sourceforge.net/#genebody-coverage-py)|
+|inner_distance|4.0.0|[http://rseqc.sourceforge.net/#inner-distance-py](http://rseqc.sourceforge.net/#inner-distance-py)|
+|read_distribution|4.0.0|[http://rseqc.sourceforge.net/#read-distribution-py](http://rseqc.sourceforge.net/#read-distribution-py)|
+|R|4.1.2|[https://www.r-project.org/](https://www.r-project.org/)|
+|Bioconductor|3.14.0|[https://bioconductor.org](https://bioconductor.org)|
+|DESeq2|1.34|[https://bioconductor.org/packages/release/bioc/html/DESeq2.html](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)|
+|tximport|1.22|[https://bioconductor.org/packages/release/bioc/html/tximport.html](https://bioconductor.org/packages/release/bioc/html/tximport.html)|
+|tidyverse|1.3.1|[https://www.tidyverse.org](https://www.tidyverse.org)|
+|Risa|1.36|[https://www.bioconductor.org/packages/release/bioc/html/Risa.html](https://www.bioconductor.org/packages/release/bioc/html/Risa.html)|
+|STRINGdb|2.6.0|[https://www.bioconductor.org/packages/release/bioc/html/STRINGdb.html](https://www.bioconductor.org/packages/release/bioc/html/STRINGdb.html)|
+|PANTHER.db|1.0.11|[https://bioconductor.org/packages/release/data/annotation/html/PANTHER.db.html](https://bioconductor.org/packages/release/data/annotation/html/PANTHER.db.html)|
+|org.Mm.eg.db|3.14.0|[https://bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html](https://bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html)|
 
