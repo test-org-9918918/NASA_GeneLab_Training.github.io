@@ -28,13 +28,13 @@ Once accounts have been set up for the educator(s) and all students, follow the 
 
 <img src="images/launcher_options.png" align="center" alt=""/>
   
-  
+<br>
   
 4. In the terminal window, run the following command to copy all the files needed to run the bootcamp to your `/home` directory:
 
 `/efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/copy_JN_files.sh`
   
-  
+<br>
   
 5. You should now see the following files added to your `/home` directory, listed on the left side of your screen:  
    RNAseq_DGE_JN_06-2022.ipynb  
@@ -45,26 +45,26 @@ Once accounts have been set up for the educator(s) and all students, follow the 
    example.csv  
    example.txt  
   
-  
+<br>
   
 6. Double click on the "Unix_Intro_JN_06-2022.ipynb" in the left panel to open the first JN in the hands-on portion of the bootcamp as shown in the image below:
 
 <img src="images/JN_files.png" align="center" alt=""/> 
   
-  
+<br>
   
 7. You are now ready to run the hands-on portion of the bootcamp. A few things to note about the specific JNs to make sure everything runs smoothly:  
   * When running the "Unix_Intro_JN_06-2022.ipynb" and "RNAseq_fastq_to_counts_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "Python [conda env:gl4u]". If it is not, click on the kernel shown, and select "Python [conda env:gl4u]" from the drop-down menu as indicated in the image below.
 
 <img src="images/python_kernel.png" align="center" alt=""/>
   
-  
+<br>
   
    * When running the "R_Intro_JN_06-2022.ipynb" and "RNAseq_DGE_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "R [conda env:gl4u-r]". If it is not, click on the kernel shown, and select "R [conda env:gl4u-r]" from the drop-down menu as indicated in the image below.
 
 <img src="images/R_kernel.png" align="center" alt=""/>
   
-  
+<br>
   
 ---
 ## The follow software is used in this bootcamp:
