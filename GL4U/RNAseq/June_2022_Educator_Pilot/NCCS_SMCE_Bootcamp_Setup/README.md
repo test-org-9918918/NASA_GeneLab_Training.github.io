@@ -20,6 +20,8 @@ Once accounts have been set up for the educator(s) and all students, follow the 
 
 1. Go to [https://daskhub.gl4u.mysmce.com/](https://daskhub.gl4u.mysmce.com/) and type in your username and password. You will receive a text message with a code to fill in on the next screen.
 
+<br>
+
 2. You will then be prompted to select a server. Select the "Small Server" from the option list and click "Start" as shown below:
 
 <img src="images/server_options.png" align="center" alt=""/>
