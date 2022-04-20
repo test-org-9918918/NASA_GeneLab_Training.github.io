@@ -1,16 +1,15 @@
-# GL4U: June 2021 RNAseq Bootcamp - Pilot
+# GL4U: June 2022 RNAseq Educator Bootcamp - Pilot
 
-This directory holds the installation instructions and training materials used for the pilot GL4U: RNA sequencing (RNAseq) bootcamp, which was developed through a collaboration between [NASA GeneLab](https://genelab.nasa.gov/), [San Jose State University](https://www.sjsu.edu/), and [Universities Space Research Association](https://www.usra.edu/). The pilot GL4U: RNAseq bootcamp contains introductory command line and space biology-specific lectures, as well as hands-on instruction via Jupyter Notebooks (JNs) for running general Unix and R commands and for processing RNAseq data using [GeneLab's RNAseq standard processing pipeline, revision A](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/Previous_GL-DPPD-7101_Revisions/GL-DPPD-7101-A.md). These materials were organized into a week-long training program as detailed in the [schedule](Bootcamp_Schedule.md). The entire bootcamp was recorded and the recordings can be found [here](), broken up based on each day of instruction indicated in the [schedule](Bootcamp_Schedule.md).
+This directory holds the bootcamp setup instructions and training materials used for the pilot GL4U: RNA sequencing (RNAseq) Educator Bootcamp, which was developed through a collaboration between [NASA GeneLab](https://genelab.nasa.gov/) and the [NASA Center for Climate Simulation, NCCS](https://www.nccs.nasa.gov/) [Science Managed Could Environment, SMCE](https://www.nccs.nasa.gov/systems/SMCE) team. The pilot GL4U: RNAseq Educator Bootcamp contains materials similar to the [2021 GL4U: RNAseq Student Bootcamp](../June_2021_Student_Pilot), including introductory command line and space biology-specific lectures, hands-on instruction via Jupyter Notebooks (JNs) for running general Unix and R commands and for processing RNAseq data using [GeneLab's RNAseq standard processing pipeline, revision D](), but also contains instructions for educators to subsequently teach the bootcamp content at their home institution. These materials were organized into a week and a half long training program as detailed in the [schedule](Bootcamp_Schedule.md). The entire bootcamp will be recorded and the recordings will be uploaded [here](), broken up based on each day of instruction indicated in the [schedule](Bootcamp_Schedule.md).
 
 ---
-## Installation Instructions
-To run this bootcamp, instructors should work with their system administrator to set up a JupyterHub containing RNAseq data processing tools that can be accessible by all bootcamp participants. Additionally, a primary set of RNAseq processed data from [GLDS-104](https://genelab-data.ndc.nasa.gov/genelab/accession/GLDS-104/) (the GeneLab dataset used for this bootcamp) must be generated and accessible by all bootcamp participants through the JupyterHub. Click on the links below for more info.
-- [JupyterHub Installation](JupyterHub_Installation)
-- [Setup GLDS-104 RNAseq Processed Data](Set-Up_RNAseq_Processed_Data)
+## Bootcamp Setup Instructions
+To run the GL4U: RNAseq Bootcamp at your home institution, instructors must request a time slot for resources on the NCCS SMCE system and accounts to be set up for all students who plan to participate. The instructions to request resources and accounts, as well as details about how to get started can be found in: 
+- [NCCS_SMCE_Bootcamp_Setup](NCCS_SMCE_Bootcamp_Setup)
 
 ---
 ## Training Materials
-Throughout the bootcamp, instruction transitioned between lectures and hands-on training. In the links below, we provide 3 complete slide decks for each major topic covered, and those same slide decks split-up into sections based on when the material was taught during the week-long bootcamp. We also provide 4 JNs that contain the hands-on training corresponing to the lecture material, as well as completed versions of each JN. For information about when each section of the JNs were taught during the bootcamp see the [schedule](Bootcamp_Schedule.md). 
+Throughout the bootcamp, instruction transitions between lectures and hands-on training. In the links below, we provide 3 complete slide decks for each major topic covered, and those same slide decks split-up into sections based on when the material was taught during the week and a half long bootcamp. We also provide 4 JNs that contain the hands-on training corresponing to the lecture material, as well as completed versions of each JN. For information about when each section of the JNs were taught during the bootcamp see the [schedule](Bootcamp_Schedule.md). 
 
 |Bootcamp [Lectures](Lectures)|Corresponding hands-on training via JNs|
 |:---------------------------:|:-------------------------------------:|
@@ -19,36 +18,9 @@ Throughout the bootcamp, instruction transitioned between lectures and hands-on 
 |[Overview of the Statistics Used for RNAseq Data Analysis](Lectures/Statistics_Intro)|[Analyze RNAseq gene count data to generate differential gene expression data and corresponding visualizations](RNAseq_DGE_JN)|
 
 ---
-## Required Resources
-The following compute resources are required to set up and run this bootcamp for up to 35 users (including instructors and TAs).
-
-### Head Node
-- Used for running the [JupyterHub](JupyterHub_Installation)
-- All users will login to the JupyterHub (and thus the head node) via a web browser
-- Required specs:
-  -  At least 16 cores (32 CPUs)
-  -  At least 65 GB RAM
-
-### Compute Nodes
-- Used for creating the main set of processed data
-- Used for running jobs that require high compute resources, which are submitted to a job scheduler from the head node during the bootcamp
-- Required specs:
-  -  2 compute nodes each with:
-    -  At least 16 cores (32 CPUs)
-    -  At least 128 GB RAM
-
-### Storage Requirements
-- Main set of processed data (including reference and index files):
-  - 1 TB
-- Processed data generated by the participants and instructors during the course (each process 1 sample during the course):
-  - 50 GB per participant X 35 participants per bootcamp = 1.75 TB
-- Total storage needed:
-  - 3 TB (250 GB of additional storage is added for temporary files generated during processing)
-
----
 ### Content Contributors
 The following people have developed the content and instructions for running this bootcamp:
 - Amanda Saravia-Butler (GeneLab Data Processing)
 - Lauren Sanders (GeneLab Data Processing)
 - Philip Heller (San Jose State University, Assistant Professor)
-- Steven Boring (San Jose State University, System Administrator)
+- NASA NCCS SMCE Team (NASA Goddard Space Flight Center, Greenbelt, MD)
