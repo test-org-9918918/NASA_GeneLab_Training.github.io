@@ -6,3 +6,4 @@ This directory holds the training materials used for each RNAseq bootcamp conduc
 ---
 ## Past and Future RNAseq Bootcamps
 - [June_2021_Pilot](June_2021_Pilot)  
+- [June_2022_Educator Pilot](June_2021_Pilot)
