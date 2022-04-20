@@ -7,10 +7,10 @@ The Pilot GL4U: Educator RNAseq Bootcamp was designed to teach college-level edu
 Insert instrcutions for how Educators can request access and set up accounts for themselves and their students
 
 Information needed from all users to set up accounts:
-> Full name
-> E-mail address
-> Phone number
-> Citizenship
+> Full name  
+> E-mail address  
+> Phone number  
+> Citizenship  
 
 ## Getting Started
 
@@ -30,21 +30,21 @@ Once accounts have been set up for the educator(s) and all students, follow the 
 
 `/efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/copy_JN_files.sh`
 
-5. You should now see the following files added to your `/home` directory, listed on the left side of your screen:
-   RNAseq_DGE_JN_06-2022.ipynb
-   RNAseq_fastq_to_counts_JN_06-2022.ipynb
-   R_Intro_JN_06-2022.ipynb
-   Saturn.txt
-   Unix_Intro_JN_06-2022.ipynb
-   example.csv
-   example.txt
+5. You should now see the following files added to your `/home` directory, listed on the left side of your screen:  
+   RNAseq_DGE_JN_06-2022.ipynb  
+   RNAseq_fastq_to_counts_JN_06-2022.ipynb   
+   R_Intro_JN_06-2022.ipynb  
+   Saturn.txt  
+   Unix_Intro_JN_06-2022.ipynb  
+   example.csv  
+   example.txt  
 
 6. Double click on the "Unix_Intro_JN_06-2022.ipynb" in the left panel to open the first JN in the hands-on portion of the bootcamp as shown in the image below:
 
 <img src="images/JN_files.png" align="center" alt=""/> 
 
-7. You are now ready to run the hands-on portion of the bootcamp. A few things to note about the specific JNs to make sure everything runs smoothly:
-   * When running the "Unix_Intro_JN_06-2022.ipynb" and "RNAseq_fastq_to_counts_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "Python [conda env:gl4u]". If it is not, click on the kernel shown, and select "Python [conda env:gl4u]" from the drop-down menu as indicated in the image below.
+7. You are now ready to run the hands-on portion of the bootcamp. A few things to note about the specific JNs to make sure everything runs smoothly:  
+  * When running the "Unix_Intro_JN_06-2022.ipynb" and "RNAseq_fastq_to_counts_JN_06-2022.ipynb" JNs, make sure the kernel running, as indicated in the top right corner of the JN window, is "Python [conda env:gl4u]". If it is not, click on the kernel shown, and select "Python [conda env:gl4u]" from the drop-down menu as indicated in the image below.
 
 <img src="images/python_kernel.png" align="center" alt=""/>
 
