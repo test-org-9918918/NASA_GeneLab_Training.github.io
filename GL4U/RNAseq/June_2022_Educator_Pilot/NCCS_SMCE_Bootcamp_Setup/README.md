@@ -1,17 +1,22 @@
 # Instructions For Setting Up the Bootcamp On the NASA NCCS SMCE System 
 
-The Pilot GL4U: Educator RNAseq Bootcamp was designed to teach college-level educators how to process RNAseq data with [version D]() of the [GeneLab RNA-seq consensus pipeline](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8044432/) using a series of Jupyter Notebooks (JNs). To allow all bootcamp participants to run the JNs within the same environment, the [NASA Center for Climate Simulation, NCCS](https://www.nccs.nasa.gov/) [Science Managed Could Environment, SMCE](https://www.nccs.nasa.gov/systems/SMCE) team set up a [JupyterHub](https://jupyter.org/hub) on their system. The GeneLab team equiped the JupyterHub environment with all the content needed for educators to teach the bootcamp content at their home institutions. For educators who successfully completed the Pilot GL4U: Educator RNAseq Bootcamp, follow the instructions below to request up to XX weeks of access for you teach the bootcamp material to your students.     
+The Pilot GL4U: Educator RNAseq Bootcamp was designed to teach college-level educators how to process RNAseq data with [version D](https://github.com/nasa/GeneLab_Data_Processing/blob/master/RNAseq/Pipeline_GL-DPPD-7101_Versions/GL-DPPD-7101-D.md) of the [GeneLab RNA-seq consensus pipeline](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8044432/) using a series of Jupyter Notebooks (JNs). To allow all bootcamp participants to run the JNs within the same environment, the [NASA Center for Climate Simulation, NCCS](https://www.nccs.nasa.gov/) [Science Managed Could Environment, SMCE](https://www.nccs.nasa.gov/systems/SMCE) team set up a [JupyterHub](https://jupyter.org/hub) on their system. The GeneLab team equiped the JupyterHub environment with all the content needed for educators to teach the bootcamp content at their home institutions. For educators who successfully completed the Pilot GL4U: Educator RNAseq Bootcamp, follow the instructions below to request up to 3 weeks of access for you to teach the bootcamp material to your students.     
 
 ---
 ## Request Access To the NCCS SMCE GL4U JupyterHub
 
-Insert instrcutions for how Educators can request access and set up accounts for themselves and their students
+1. Sign up for a 3-consecutive week time slot [here]().
+   > Note: Only one educator per 3-week time slot
 
-Information needed from all users to set up accounts:
-> Full name  
-> E-mail address  
-> Phone number  
-> Citizenship  
+2. Send a list of up to 30 students, with the following info for each student, to Amanda (amanda.m.saravia-butler@nasa.gov) at least 2 weeks before the start of your 3-week time slot. 
+
+   Information needed from each student to set up accounts:
+   > Full name  
+   > Proposed username  
+   > E-mail address  
+   > A US phone number capable of receiving SMS text mesages   
+
+3. Amanda will notify you when all user accounts have been set up within 1-week of your 3-week time slot.
 
 ---
 ## Getting Started
