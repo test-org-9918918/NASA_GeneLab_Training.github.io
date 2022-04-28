@@ -12,7 +12,7 @@ The Pilot GL4U: Educator RNAseq Bootcamp was designed to teach college-level edu
 
    Information needed from each student to set up accounts:
    > Full name  
-   > Proposed username  
+   > Proposed username (lastname_firstinitial) 
    > E-mail address  
    > A US phone number capable of receiving SMS text mesages   
 
