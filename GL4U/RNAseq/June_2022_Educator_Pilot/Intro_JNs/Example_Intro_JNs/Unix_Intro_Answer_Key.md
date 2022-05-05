@@ -22,7 +22,7 @@
 ### Section 2a.
 
 **Where are you located within the cluster?** 
-> /home/username
+> /home/jovyan
 
 **Did you notice any familiar files?** 
 > Yes, the example.txt file
