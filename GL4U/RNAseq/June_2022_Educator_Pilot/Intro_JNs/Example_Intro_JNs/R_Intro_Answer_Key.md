@@ -10,7 +10,7 @@
 ### Section 1b.
 
 **Where are you located within the cluster?**
-> /home/[username]
+> /home/jovyan
 
 ---
 ### Section 1c.
