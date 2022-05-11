@@ -4,31 +4,29 @@
 
 |Time (PDT)|Activity|Video Recording|
 |:---------|:-------|:--------------|
-|8am – 930am|Welcome / Start Intro to NASA, GeneLab, and PP (VOICES I) lecture|[Day1 Part 1 (of 5)](temp.md)|
-|955am - 10am|BREAK|N/A|
-|10am - 1115am|NASA Guest Lectures (Winnie Kuang and Kristen Kallstrom) – UAM and ROMAX projects|N/A|
-|1115am - 1130am|BREAK|N/A|
-|1130am - noon|Finish Intro to NASA and GeneLab (lecture)|[Day1 Part 2 (of 5)](temp.md)|
-|noon - 1pm|LUNCH|N/A|
-|1pm - 145pm|Intro to Command Line (lecture)|[Day1 Part 3 (of 5)](temp.md)|
-|145pm - 2pm|Logging into the SJSU cluster|[Day1 Part 3 (of 5)](temp.md)|
-|2pm - 310pm|Begin Unix Intro JN|Day1 Part 4 (of 5) Recording is not available|
-|310pm - 330pm|BREAK|N/A|
-|330pm - 5pm|Finish Unix Intro JN|[Day1 Part 5 (of 5)](temp.md)|
+|8am – 930am | Welcome / Start Intro to NASA, GeneLab, and PP (VOICES I) lecture | TBA
+|930am – 950am | BREAK | TBA
+|950am – 1020am | Finish Intro to NASA, GeneLab, and PP (VOICES I) lecture | TBA
+|1020am – 11am | Intro to Command Line (lecture)  | TBA
+|11am – Noon | LUNCH | TBA
+|Noon – 1215pm | Logging into the NCCS SMCE system | TBA
+|1215pm – 130pm | Begin Unix Intro JN | TBA
+|130pm – 150pm | BREAK | TBA
+|150pm – 3pm | Finish Unix Intro JN | TBA
 
 ---
 ## Day 2 Tuesday (6/8/2021):
 
 |Time (PDT)|Activity|Video Recording|
 |:---------|:-------|:--------------|
-|9am - 1040am|Begin R Intro JN|[Day2 Part 1 (of 3)](temp.md)|
+|9am - 1040am|Begin R Intro JN|TBA|
 |1040am - 11am|BREAK|N/A|
 |11am - noon|Talk from astronaut Steve Smith|N/A|
 |noon - 1pm|LUNCH|N/A|
-|1pm - 145pm|Finish R Intro JN|[Day2 Part 2 (of 3)](temp.md)|
-|145pm - 240pm|Begin RNAseq Overview through library prep (lecture)|[Day2 Part 2 (of 3)](temp.md)|
+|1pm - 145pm|Finish R Intro JN|TBA|
+|145pm - 240pm|Begin RNAseq Overview through library prep (lecture)|TBA|
 |240pm - 3pm|BREAK|N/A|
-|3pm - 5pm|Continue RNAseq Overview through raw data QC (lecture)|[Day2 Part 3 (of 3)](temp.md)|
+|3pm - 5pm|Continue RNAseq Overview through raw data QC (lecture)|TBA|
 
 ---
 ## Day 3 Wednesday (6/9/2021):
