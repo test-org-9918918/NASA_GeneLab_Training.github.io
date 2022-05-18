@@ -91,7 +91,7 @@
 	> No, we could have used the Likelihood Ratio Test (LRT)
 
 2.	Why did we choose the Wald Test?
-	> Because we only had 2 comparisons
+	> Because we only have 2 groups to compare
 
 **Look at the PCA plots before and after normalization, and answer the following questions:**
 1.	Is the percent of variance explained by PC2 more or less after normalization? Does that tell you anything about what was contributing to the differences in PC2?
