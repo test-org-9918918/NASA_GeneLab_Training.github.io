@@ -213,12 +213,12 @@ concentrated at the highest values.
 2.	Is Gm5532 more highly expressed in FLT or GC samples? How do you know?
 	> GC, because it has a negative LFC and we plotted the FLT vs GC comparison
 
-3.	Which gene is most highly expressed in the FLT group? Does this gene also pass the adjusted p-value cutoff?
+3.	Which gene is most highly differentially expressed in the FLT group? Does this gene also pass the adjusted p-value cutoff?
 	> Krt17 
 	>
 	> Yes, it does pass the p-value cutoff
 
-4.	Since Gm5532 is the most highly differentially expressed gene, see if you can find its biological function (feel free to use your friend Google to help you out). Are you able to find an annotated function?
+4.	Since Gm5532 is the most significant differentially expressed gene, see if you can find its biological function (feel free to use your friend Google to help you out). Are you able to find an annotated function?
 	> Gm5532 is an uncharacterized protein. There are references indicating its expression in the musculoskeletal system and in the brain; however, the function of the protein that is generated from this gene is currently unknown.
 
 5.	What is the function of the gene Krt17? Is it more highly expressed in the FLT or GC condition? Based on its function, why do you think this is?
