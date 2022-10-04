@@ -14574,7 +14574,9 @@ a.anchor-link {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a class="anchor" id="dirstructure"></a></p>
-<h2 id="0.-Create-Directory-Structure-for-QC-and-Processed-Data">0. Create Directory Structure for QC and Processed Data<a class="anchor-link" href="#0.-Create-Directory-Structure-for-QC-and-Processed-Data">&#182;</a></h2><p>Before running any analyses, let's create a directory structure to store the data. During RNAseq processing, you will generate several, likely 100s, of files so it is important to keep the QC and processed data files orgainzed.</p>
+<h2 id="0.-Create-Directory-Structure-for-QC-and-Processed-Data">0. Create Directory Structure for QC and Processed Data<a class="anchor-link" href="#0.-Create-Directory-Structure-for-QC-and-Processed-Data">&#182;</a></h2><blockquote><p>Note: If you have to restart your kernel, run the code block <a href="#paths">here</a> then use the table of contents above to jump to where you were before the kernel restarted.</p>
+</blockquote>
+<p>Before running any analyses, let's create a directory structure to store the data. During RNAseq processing, you will generate several, likely 100s, of files so it is important to keep the QC and processed data files organized.</p>
 <p>Let's start by creating a top level directory with the GeneLab dataset number indicated:</p>
 
 </div>
@@ -14752,6 +14754,7 @@ a.anchor-link {
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a class="anchor" id="paths"></a></p>
 <h3 id="Define-Paths-to-GL4U:-RNAseq-Bootcamp-Processed-Data">Define Paths to GL4U: RNAseq Bootcamp Processed Data<a class="anchor-link" href="#Define-Paths-to-GL4U:-RNAseq-Bootcamp-Processed-Data">&#182;</a></h3><p>To save time and conserve resources, some of the processing steps below will utilize processed data that have already been generated for this course. Run the following commands to let the computer know where to find those files:</p>
 
 </div>
@@ -14858,7 +14861,7 @@ AAFFFJJJAAAAFAFFAFJAAAFJJJJJFFFJFFFJJFFJJJJJJJJJJJJJJJFJJJJJJJJJJJJJFJJJJJJJFFFJ
 <p><strong>Parameter Definitions:</strong></p>
 <ul>
 <li><code>-o</code> – the output directory to store the FastQC results</li>
-<li><code>*.fastq.gz</code> – the input reads are specified as a positional argument, and can be given all at once with wildcards, or as individual arguments with spaces inbetween them</li>
+<li><code>*.fastq.gz</code> – the input reads are specified as a positional argument, and can be given all at once with wildcards, or as individual arguments with spaces in between them</li>
 </ul>
 <p><strong>Input Data:</strong></p>
 <ul>
@@ -14897,7 +14900,7 @@ AAFFFJJJAAAAFAFFAFJAAAFJJJJJFFFJFFFJJFFJJJJJJJJJJJJJJJFJJJJJJJJJJJJJFJJJJJJJFFFJ
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 669
+<pre>Submitted batch job 420
 </pre>
 </div>
 </div>
@@ -15276,7 +15279,7 @@ total run time(h): .32
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=14151;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
+  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=615760;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
 
 <span class="ansi-blue-fg">|           multiqc</span> | <span class="ansi-yellow-fg">MultiQC Version v1.12 now available!</span>
 <span class="ansi-blue-fg">|           multiqc</span> | Search path : /efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/GLDS-104_main/00-RawData/FastQC_Reports
@@ -15312,7 +15315,9 @@ total run time(h): .32
 <p><strong>Output Data:</strong></p>
 <ul>
 <li>raw_multiqc_data (directory containing the compiled raw FastQC data from each sample, used to create the MultiQC report)</li>
-<li>raw_multiqc.html (multiqc report: an interactive webpage file containing graphical representations of the compiled raw sequence quality)</li>
+<li>raw_multiqc.html (multiqc report: an interactive webpage file containing graphical representations of the compiled raw sequence quality)<blockquote><p>Note: If more than 50 samples are being compiled, add the <code>--interactive</code> option to the command above to force the html file to be interactive. See the MultiQC documentation <a href="https://multiqc.info/docs/#large-sample-numbers">here</a> for additional info.</p>
+</blockquote>
+</li>
 </ul>
 <p>Let's view the MultiQC report generated from the raw FastQC data:</p>
 <blockquote><p>Note: Click <a href="https://multiqc.info/examples/rna-seq/multiqc_report.html#fastqc">here</a> for an example and description of the MultiQC plots derived from FastQC data</p>
@@ -15457,7 +15462,7 @@ total run time(h): .32
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 765
+<pre>Submitted batch job 950
 </pre>
 </div>
 </div>
@@ -16001,7 +16006,7 @@ Number of sequence pairs removed because at least one read was shorter than the 
 <p><strong>Parameter Definitions:</strong></p>
 <ul>
 <li><code>-o</code> – the output directory to store the FastQC results</li>
-<li><code>*.fastq.gz</code> – the input reads are specified as a positional argument, and can be given all at once with wildcards, or as individual arguments with spaces inbetween them</li>
+<li><code>*.fastq.gz</code> – the input reads are specified as a positional argument, and can be given all at once with wildcards, or as individual arguments with spaces in between them</li>
 </ul>
 <p><strong>Input Data:</strong></p>
 <ul>
@@ -16041,7 +16046,7 @@ Number of sequence pairs removed because at least one read was shorter than the 
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 241
+<pre>Submitted batch job 736
 </pre>
 </div>
 </div>
@@ -16186,7 +16191,7 @@ total run time(h): .23
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=18999;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
+  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=299907;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
 
 <span class="ansi-blue-fg">|           multiqc</span> | <span class="ansi-yellow-fg">MultiQC Version v1.12 now available!</span>
 <span class="ansi-blue-fg">|           multiqc</span> | Search path : /efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/GLDS-104_main/01-TG_Preproc/FastQC_Reports
@@ -16310,7 +16315,7 @@ total run time(h): .23
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a class="anchor" id="starindex"></a></p>
 <h2 id="3.-Build-a-STAR-Index-for-the-Reference-Genome">3. Build a STAR Index for the Reference Genome<a class="anchor-link" href="#3.-Build-a-STAR-Index-for-the-Reference-Genome">&#182;</a></h2><p>Now that our RNA sequence data is of high quality, our next step is to identify which gene(s) each RNA sequence came from. To do this, we will align the reads back to the reference genome of the organism from which the samples were derived using the <a href="https://github.com/alexdobin/STAR">STAR (Spliced Transcripts Alignment to a Reference)</a> aligner.</p>
-<p>Since our samples came from the soleus muscle of mice (scientific name <em>Mus musculus</em>), we will align the trimmed reads to the <em>Mus musculus</em> reference genome (GRCm38.p6) from the ensembl database found <a href="http://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/dna/Mus_musculus.GRCm38.dna.primary_assembly.fa.gz">here</a>. In addition to the reference genome, we will also need to provide STAR with information about the gene features of all annotated genes in the reference genome. (Note: Annotated genes are genes whose genomic coordinatates and function, i.e. where they are and what they do, are known.) All of the gene feature information STAR needs is provided in the gene transfer format (GTF) file associated with the <em>Mus musculus</em> reference genome (GRCm38.p6) from the ensembl database found <a href="http://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/Mus_musculus.GRCm38.101.gtf.gz">here</a>.</p>
+<p>Since our samples came from the soleus muscle of mice (scientific name <em>Mus musculus</em>), we will align the trimmed reads to the <em>Mus musculus</em> reference genome (GRCm38.p6), file <code>Mus_musculus.GRCm38.dna.primary_assembly.fa.gz</code> from the ensembl database found <a href="http://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/dna/">here</a>. In addition to the reference genome, we will also need to provide STAR with information about the gene features of all annotated genes in the reference genome. (Note: Annotated genes are genes whose genomic coordinates and function, i.e. where they are and what they do, are known.) All of the gene feature information STAR needs is provided in the <code>Mus_musculus.GRCm38.101.gtf.gz</code> gene transfer format (GTF) file associated with the <em>Mus musculus</em> reference genome (GRCm38.p6) from the ensembl database found <a href="http://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/">here</a>.</p>
 <blockquote><p>For more information about the ensembl gene transfer format (GTF) and gene feature format (GFF) files, click <a href="http://m.ensembl.org/info/website/upload/gff.html">here</a></p>
 </blockquote>
 <p>Before we can align our trimmed reads to the <em>Mus musculus</em> reference genome, the STAR program needs to organize all the information provided in the genome and GTF files to be able to accurately assign each read to the gene from which it came. To do this, we will first run STAR in the <code>genomeGenerate</code> mode, which will create a STAR index containing the genome reference and gene feature information in the STAR format.</p>
@@ -16336,7 +16341,7 @@ total run time(h): .23
 <li><code>--limitGenomeGenerateRAM</code> - maximum RAM available (in bytes) to generate STAR reference; at least 35GB are needed for mouse and the example above shows 55GB</li>
 <li><code>--genomeSAindexNbases</code> - length (in bases) of the SA pre-indexing string, usually between 10 and 15. Longer strings require more memory but allow for faster searches. This value should be scaled down for smaller genomes (like bacteria) to min(14, log2(GenomeLength)/2 - 1). For example, for a 1 megaBase genome this value would be 9.</li>
 <li><code>--genomeDir</code> - specifies the path to the directory where the STAR indexed reference will be stored. At least 100GB of available disk space is required for mammalian genomes.</li>
-<li><code>--genomeFastaFiles</code> - specifies one or more uncompressed fasta file(s) containg the genome reference sequences</li>
+<li><code>--genomeFastaFiles</code> - specifies one or more uncompressed fasta file(s) containing the genome reference sequences</li>
 <li><code>--sjdbGTFfile</code> – specifies the uncompressed file(s) containing annotated transcripts in the standard gtf format</li>
 <li><code>--sjdbOverhang</code> - indicates the length of the genomic sequence around the annotated junction to be used in constructing the splice junctions database. The length should be one less than the length of the (longest) reads.</li>
 </ul>
@@ -16411,7 +16416,7 @@ total run time(h): .23
 <li><code>--twopassMode</code> – specifies 2-pass mapping mode; the <code>Basic</code> option instructs STAR to perform the 1st pass mapping, then automatically extract junctions, insert them into the genome index, and re-map all reads in the 2nd mapping pass</li>
 <li><code>--limitBAMsortRAM</code> - maximum RAM available (in bytes) to sort the bam files, the example above indicates 55GB</li>
 <li><code>--genomeDir</code> - specifies the path to the directory where the STAR indexed reference is stored</li>
-<li><code>--outSAMunmapped</code> - specifies ouput of unmapped reads in the sam format; the <code>Within</code> option instructs STAR to output the unmapped reads within the main sam file</li>
+<li><code>--outSAMunmapped</code> - specifies output of unmapped reads in the sam format; the <code>Within</code> option instructs STAR to output the unmapped reads within the main sam file</li>
 <li><code>--outFilterType</code> - specifies the type of filtering; the <code>BySJout</code> option instructs STAR to keep only those reads that contain junctions that passed filtering in the SJ.out.tab output file</li>
 <li><code>--outSAMattributes</code> - list of desired sam attributes in the order desired for the output sam file; sam attribute descriptions can be found <a href="https://samtools.github.io/hts-specs/SAMtags.pdf">here</a></li>
 <li><code>--outFilterMultimapNmax</code> – specifies the maximum number of loci the read is allowed to map to; all alignments will be output only if the read maps to no more loci than this value</li>
@@ -16440,12 +16445,12 @@ total run time(h): .23
 <blockquote><p>Note: Detailed descriptions of all STAR output files can be found in the <a href="https://github.com/alexdobin/STAR/blob/master/doc/STARmanual.pdf">STAR manual</a> under the "Output files" section.</p>
 </blockquote>
 <ul>
-<li>*Aligned.sortedByCoord.out.bam (binary, alignment map containg reads mapping to genome, sorted by coordinate)</li>
-<li>*Aligned.toTranscriptome.out.bam (binary, alignment map containg sorted reads mapping to transcriptome)</li>
+<li>*Aligned.sortedByCoord.out.bam (binary, alignment map containing reads mapping to genome, sorted by coordinate)</li>
+<li>*Aligned.toTranscriptome.out.bam (binary, alignment map containing sorted reads mapping to transcriptome)</li>
 <li>*Log.final.out (log file conting a summary of the mapping info/stats such as # reads mapped, etc)</li>
 <li>*Log.out (log file contining detailed information about the mapping run, useful for troubleshooting)</li>
 <li>*Log.progress.out (file containing the job progress statistics that is updated every minute during the mapping run)</li>
-<li>*SJ.out.tab (tab-deliminted file containg identified splice junctions and respective count data)</li>
+<li>*SJ.out.tab (tab-deliminted file containing identified splice junctions and respective count data)</li>
 <li>*_STARgenome (directory containing the extracted junctions from the 1st pass mapping that was inserted into the genome index)<ul>
 <li>sjdbInfo.txt</li>
 <li>sjdbList.out.tab</li>
@@ -16489,7 +16494,7 @@ total run time(h): .23
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 227
+<pre>Submitted batch job 542
 </pre>
 </div>
 </div>
@@ -16666,7 +16671,7 @@ samtools view: error closing standard output: -1
 <li>How many reads align in the same orientation relative to the reference? What about in the opposite orientation? How to you know? </li>
 <li>What are the min and max template length shown? How do you know?</li>
 </ol>
-<p>Now let's take a look at the the *Log.final.out file to evaluate trimmed read alignment in one of our FLT samples by running the following command:</p>
+<p>Now let's take a look at the *Log.final.out file to evaluate trimmed read alignment in one of our FLT samples by running the following command:</p>
 
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
@@ -16787,7 +16792,7 @@ samtools view: error closing standard output: -1
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=903264;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
+  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=505287;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
 
 <span class="ansi-blue-fg">|           multiqc</span> | <span class="ansi-yellow-fg">MultiQC Version v1.12 now available!</span>
 <span class="ansi-blue-fg">|           multiqc</span> | Search path : /efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/GLDS-104_main/02-STAR_Alignment/Log_files
@@ -16919,7 +16924,7 @@ samtools view: error closing standard output: -1
 </ul>
 <p><strong>Input Data:</strong></p>
 <ul>
-<li>*Aligned.sortedByCoord.out.bam (binary, alignment map containg reads mapping to genome, sorted by coordinate, output from <a href="#staralign">Step 4a</a>)</li>
+<li>*Aligned.sortedByCoord.out.bam (binary, alignment map containing reads mapping to genome, sorted by coordinate, output from <a href="#staralign">Step 4a</a>)</li>
 </ul>
 <p><strong>Output Data:</strong></p>
 <ul>
@@ -16953,7 +16958,7 @@ samtools view: error closing standard output: -1
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 130
+<pre>Submitted batch job 503
 </pre>
 </div>
 </div>
@@ -16973,10 +16978,10 @@ samtools view: error closing standard output: -1
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><a class="anchor" id="createbed"></a></p>
-<h2 id="5.-Create-a-BED-File-for-the-Reference-Genome">5. Create a BED File for the Reference Genome<a class="anchor-link" href="#5.-Create-a-BED-File-for-the-Reference-Genome">&#182;</a></h2><p>Prior to quantitating our alignment data, we need to determine if/how reads were stranded during library preparation and sequencing. To do this, we will compare the strandness of reads with the strandness of transcripts using the <a href="http://rseqc.sourceforge.net/#infer-experiment-py">RSeQC Infer Experiment</a> program.</p>
-<blockquote><p>Note: The <strong>strandness of reads</strong> is determined from the alignment data and the <strong>strandness of transcripts</strong> is determined from the reference genome gene annotations.</p>
+<h2 id="5.-Create-a-BED-File-for-the-Reference-Genome">5. Create a BED File for the Reference Genome<a class="anchor-link" href="#5.-Create-a-BED-File-for-the-Reference-Genome">&#182;</a></h2><p>Prior to quantitating our alignment data, we need to determine if/how reads were stranded during library preparation and sequencing. To do this, we will compare the strandedness of reads with the strandedness of transcripts using the <a href="http://rseqc.sourceforge.net/#infer-experiment-py">RSeQC Infer Experiment</a> program.</p>
+<blockquote><p>Note: The <strong>strandedness of reads</strong> is determined from the alignment data and the <strong>strandedness of transcripts</strong> is determined from the reference genome gene annotations.</p>
 </blockquote>
-<p>Since our samples came from the soleus muscle of mice (scientific name <em>Mus musculus</em>), we will use the gene transfer format (GTF) file associated with the <em>Mus musculus</em> reference genome (GRCm38.p6) from the ensembl database found <a href="ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/Mus_musculus.GRCm38.101.gtf.gz">here</a> to identify strandness of transcripts. However, the RSeQC Infer Experiment program requires the annotated transcripts to be in the Browser Extensible Data (BED) format. Thus, before we can assess read strandedness relative to the <em>Mus musculus</em> reference transcripts, we will first convert the mouse GTF file to a BED file using a two-step process:</p>
+<p>Since our samples came from the soleus muscle of mice (scientific name <em>Mus musculus</em>), we will use the gene transfer format (GTF) file associated with the <em>Mus musculus</em> reference genome (GRCm38.p6) from the ensembl database found <a href="ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/Mus_musculus.GRCm38.101.gtf.gz">here</a> to identify strandedness of transcripts. However, the RSeQC Infer Experiment program requires the annotated transcripts to be in the Browser Extensible Data (BED) format. Thus, before we can assess read strandedness relative to the <em>Mus musculus</em> reference transcripts, we will first convert the mouse GTF file to a BED file using a two-step process:</p>
 <blockquote><p>Step 1: Convert GTF to a GenePred table format using <a href="https://bioconda.github.io/recipes/ucsc-gtftogenepred/README.html">gtfToGenePred</a></p>
 <p>Step 2: Convert GenePred to BED format using <a href="https://bioconda.github.io/recipes/ucsc-genepredtobed/README.html">genePredToBed</a></p>
 <p>Click on the respective file links for more information about the <a href="https://genome.ucsc.edu/FAQ/FAQformat.html#format9">GenePred table format</a> and the <a href="https://genome.ucsc.edu/FAQ/FAQformat.html#format1">BED file format</a> from ucsc.</p>
@@ -16988,7 +16993,7 @@ samtools view: error closing standard output: -1
 <code>$BED_dir/Mus_musculus.GRCm38.101.gtf.genePred \</code></p>
 <p><strong>Parameter Definitions:</strong></p>
 <ul>
-<li><code>$genome_gtf/Mus_musculus.GRCm38.101.gtf</code> - specifies the uncompressed file(s) containg annotated transcripts in the standard gtf format, provided as a positional argument</li>
+<li><code>$genome_gtf/Mus_musculus.GRCm38.101.gtf</code> - specifies the uncompressed file(s) containing annotated transcripts in the standard gtf format, provided as a positional argument</li>
 <li><code>$BED_dir/Mus_musculus.GRCm38.101.gtf.genePred</code> - specifies the path to and the file name for the output GenePred file, provided as a positional argument</li>
 </ul>
 <p><strong>Step 2 - GenePred to BED:</strong></p>
@@ -16997,7 +17002,7 @@ samtools view: error closing standard output: -1
 <p><strong>Parameter Definitions:</strong></p>
 <ul>
 <li><code>-geneNameAsName2</code> – instructs the program to use gene_name for the name2 field instead of gene_id</li>
-<li><code>$genome_gtf/Mus_musculus.GRCm38.101.gtf</code> - specifies the uncompressed file(s) containg annotated transcripts in the standard gtf format, provided as a positional argument</li>
+<li><code>$genome_gtf/Mus_musculus.GRCm38.101.gtf</code> - specifies the uncompressed file(s) containing annotated transcripts in the standard gtf format, provided as a positional argument</li>
 <li><code>$BED_dir/Mus_musculus.GRCm38.101.gtf.genePred</code> - specifies the path to and the file name for the output GenePred file, provided as a positional argument</li>
 </ul>
 <p><strong>Input Data:</strong></p>
@@ -17025,7 +17030,7 @@ samtools view: error closing standard output: -1
 <li><p>This information is required for RSEM to properly assign reads to the correct gene of origin.</p>
 </li>
 </ul>
-<p>To do this, we will compare the strandness of reads with the strandness of transcripts using the <a href="http://rseqc.sourceforge.net/#infer-experiment-py">RSeQC Infer Experiment program</a>.</p>
+<p>To do this, we will compare the strandedness of reads with the strandedness of transcripts using the <a href="http://rseqc.sourceforge.net/#infer-experiment-py">RSeQC Infer Experiment program</a>.</p>
 <blockquote><p>Note: <a href="http://rseqc.sourceforge.net/">RSeQC</a> is an RNAseq quality control package containing several programs used to evaluate high throughput RNA sequence data. In addition to the Infer Experiment module used in this step, the current GeneLab RNAseq pipeline also utilizes the following modules to generate RNAseq QC metrics:</p>
 <ul>
 <li><a href="http://rseqc.sourceforge.net/#genebody-coverage-py">RSeQC geneBody_coverage</a>, used to determine RNAseq reads coverage over the length of the transcripts</li>
@@ -17050,11 +17055,11 @@ samtools view: error closing standard output: -1
 <p><strong>Input Data:</strong></p>
 <ul>
 <li>Mus_musculus.GRCm38.101.gtf.bed (mouse reference gene model in BED format, output from <a href="#createbed">Step 5</a>)</li>
-<li>*Aligned.sortedByCoord.out.bam (binary, alignment map containg sorted reads mapping to the genome, output from <a href="#staralign">Step 4a</a>)</li>
+<li>*Aligned.sortedByCoord.out.bam (binary, alignment map containing sorted reads mapping to the genome, output from <a href="#staralign">Step 4a</a>)</li>
 </ul>
 <p><strong>Output Data:</strong></p>
 <ul>
-<li>*infer_expt.out (quantitation of read strandness relative to the strandness of reference transcripts)</li>
+<li>*infer_expt.out (quantitation of read strandedness relative to the strandedness of reference transcripts)</li>
 </ul>
 
 </div>
@@ -17064,7 +17069,7 @@ samtools view: error closing standard output: -1
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sbatch <span class="nv">$processing</span>/RSeQC_analyses/infer_exp/infer_exp.slurm
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>sbatch <span class="nv">$processing</span>/RSeQC_analyses/03_infer_experiment/infer_exp.slurm
 </pre></div>
 
      </div>
@@ -17084,7 +17089,7 @@ samtools view: error closing standard output: -1
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 930
+<pre>Submitted batch job 443
 </pre>
 </div>
 </div>
@@ -17207,7 +17212,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=508190;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
+  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=838200;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
 
 <span class="ansi-blue-fg">|           multiqc</span> | <span class="ansi-yellow-fg">MultiQC Version v1.12 now available!</span>
 <span class="ansi-blue-fg">|           multiqc</span> | Search path : /efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/GLDS-104_main/RSeQC_analyses/03_infer_experiment
@@ -17238,7 +17243,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 </ul>
 <p><strong>Input Data:</strong></p>
 <ul>
-<li>*infer_exp.out (quantitation of read strandness relative to the strandness of reference transcripts)</li>
+<li>*infer_exp.out (quantitation of read strandedness relative to the strandedness of reference transcripts)</li>
 </ul>
 <p><strong>Output Data:</strong></p>
 <ul>
@@ -17316,7 +17321,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 <p><strong>Take a look at the multiQC report of the strandedness data above and answer the following questions:</strong></p>
 <ol>
 <li>Are the data for all samples stranded or unstranded?</li>
-<li>If stranded, what is the orientitation of the reads relative to the reference? </li>
+<li>If stranded, what is the orientation of the reads relative to the reference? </li>
 </ol>
 <p><br></p>
 <hr>
@@ -17340,8 +17345,8 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>Parameter Definitions:</strong></p>
 <ul>
-<li><code>--gtf</code> – specifies the uncompressed file(s) containg annotated transcripts in the standard gtf format</li>
-<li><code>$genome_gtf/Mus_musculus.GRCm38.dna.primary_assembly.fa</code> – specifies one or more uncompressed fasta file(s) containg the genome reference sequences, provided as a positional argument</li>
+<li><code>--gtf</code> – specifies the uncompressed file(s) containing annotated transcripts in the standard gtf format</li>
+<li><code>$genome_gtf/Mus_musculus.GRCm38.dna.primary_assembly.fa</code> – specifies one or more uncompressed fasta file(s) containing the genome reference sequences, provided as a positional argument</li>
 <li><code>$RSEM_index/Mmus</code> - specifies the path to the directory where the RSEM reference will be stored and the prefix desired for the RSEM reference files (Mmus), provided as a positional argument </li>
 </ul>
 <p><strong>Input Data:</strong></p>
@@ -17372,7 +17377,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 <h3 id="8a.-Count-Aligned-Reads-with-RSEM">8a. Count Aligned Reads with RSEM<a class="anchor-link" href="#8a.-Count-Aligned-Reads-with-RSEM">&#182;</a></h3><p>Now we're ready to quantify the aligned reads with RSEM. Similar to read alignment, quantifying the number of reads that aligned to each gene can also be quite challenging. How so?</p>
 <p>If a read maps to more than one location on the genome, how do we know from which location it truly originated? It is also difficult to quantify alternative splice isoforms of a gene with significant sequence overlap. The RSEM software package was designed to address these issues and "rescue" reads that are not uniquely mapped by allocating them to transcripts using a 3-step algorithm:</p>
 <ol>
-<li>Estimate abundances based on uniqely mapped reads only.</li>
+<li>Estimate abundances based on uniquely mapped reads only.</li>
 <li>For each read that maps to multiple locations (multiread), divide it between the transcripts to which it maps, proportional to their abundances estimated in the first step.</li>
 <li>Compute abundances based on updated counts for each transcript.</li>
 </ol>
@@ -17385,6 +17390,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 <code>--bam \</code><br>
 <code>--paired-end \</code><br>
 <code>--seed 12345 \</code><br>
+<code>--seed-length 20 \</code><br>
 <code>--estimate-rspd \</code><br>
 <code>--no-bam-output \</code><br>
 <code>--strandedness reverse \</code><br>
@@ -17398,6 +17404,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 <li><code>--bam</code> - specifies that the input alignments are in bam format</li>
 <li><code>--paired-end</code> - indicates that the input reads are paired-end reads</li>
 <li><code>--seed</code> - the seed for the random number generators used in calculating posterior mean estimates and credibility intervals; must be a non-negative 32-bit integer</li>
+<li><code>--seed-length</code> - instructs RSEM to ignore any aligned read if it or its mate's (for paired-end reads) length is less than the value indicated (20bp, in the command above)</li>
 <li><code>--estimate-rspd</code> - instructs RSEM to estimate the read start position distribution (rspd) from the data </li>
 <li><code>--no-bam-output</code> - instructs RSEM not to output any bam file</li>
 <li><code>--strandedness</code> - defines the strandedness of the RNAseq reads; the <code>reverse</code> option means reads are antisense relative to the reference, indicated from the <a href="#strandedness">Step 6</a> output files </li>
@@ -17408,7 +17415,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 <p><strong>Input Data:</strong></p>
 <ul>
 <li>RSEM genome reference (output from <a href="#rsemindex">Step 7</a>)</li>
-<li>*Aligned.toTranscriptome.out.bam (binary, alignment map containg sorted reads mapping to transcriptome, output from <a href="#staralign">Step 4a</a>)</li>
+<li>*Aligned.toTranscriptome.out.bam (binary, alignment map containing sorted reads mapping to transcriptome, output from <a href="#staralign">Step 4a</a>)</li>
 </ul>
 <p><strong>Output Data:</strong></p>
 <ul>
@@ -17449,7 +17456,7 @@ Fraction of reads explained by &#34;1+-,1-+,2++,2--&#34;: 0.8579
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Submitted batch job 822
+<pre>Submitted batch job 674
 </pre>
 </div>
 </div>
@@ -21628,7 +21635,7 @@ ENSMUST00000136359	ENSMUSG00000000031	2286	2086.54	62708.24	629.76	559.37	87.45
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>
-  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=769284;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
+  <span class="ansi-blue-fg">/</span><span class="ansi-green-fg">/</span><span class="ansi-red-fg">/</span> ]8;id=401665;https://multiqc.info\<span class="ansi-bold">MultiQC</span>]8;;\ 🔍 | v1.11
 
 <span class="ansi-blue-fg">|           multiqc</span> | <span class="ansi-yellow-fg">MultiQC Version v1.12 now available!</span>
 <span class="ansi-blue-fg">|           multiqc</span> | Search path : /efs/GL4U/RNAseq_Bootcamps/202206_RNAseq_Educator/GLDS-104_main/03-RSEM_Counts
